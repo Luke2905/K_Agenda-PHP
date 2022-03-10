@@ -1,8 +1,12 @@
-<img class="img1" src="http://www.portaldolicenciamento.com/images/salao-cabeleireiro.png" alt="">
+<div class="top">
+    <h1>King</h1>
+</div>
 
 <div class="desc">
     <div class="img_desc">
         
     </div>
-    <div class="txt_desc"></div>
+    <div class="txt_desc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illo aut beatae similique minima saepe illum, quae sapiente distinctio laboriosam. Dolor et laudantium omnis obcaecati, cupiditate doloribus perferendis autem cum!</p>
+    </div>
 </div>

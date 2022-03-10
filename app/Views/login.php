@@ -8,7 +8,7 @@
    Login
   </div>
   <div class="card-body">
-   <form action="Home\layout" method="post">
+   <form action="Home\layout" method="POST">
        <label class="form-label" for="">Usuario</label>
        <input class="form-control" type="text" name="usuario" id="">
        <label class="form-label" for="">Senha</label>

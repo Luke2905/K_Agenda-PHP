@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+body{
+    background-image: linear-gradient(black, gold);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 /*Header*/
 
 header {
@@ -83,7 +88,36 @@ header>.center {
 }
 
 /*BODY IMAGEM*/
-.img1{
-    width: 100% ;
-    height: 350px;
+
+
+/*Descricao*/
+.desc{
+    border-radius: 20px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+    max-width: 100%;
+    height: 500px;
+    background-color:azure;
 }
+
+.img_desc{
+    margin: 20px;
+    padding-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: #595260;
+}
+
+.txt_desc{
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+h1{
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+}
+

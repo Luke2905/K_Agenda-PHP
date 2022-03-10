@@ -13,7 +13,9 @@ class Home extends BaseController
 
     public function layout()
     {
+        echo view('cabecalho');
         echo view('principal');
+        echo view('rodape');
     }
 
     public function validar()
