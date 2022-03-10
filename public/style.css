@@ -1,0 +1,89 @@
+/*HTML*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    background: black;
+    padding: 10px 0;
+}
+
+header>.center {
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo a {
+    font-size: 21px;
+    font-family: 'Fredoka One', cursive;
+    color: snow;
+    width: 50%;
+}
+
+.logo h1{
+    padding-left: 0.5rem;
+}
+
+.menu {
+    width: 50%;
+    text-align: right;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.menu a.selected {
+    font-weight: bold;
+    color: gainsboro;
+}
+
+.menu a {
+    color: snow;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    font-size: 18px;
+    transition: 1s;
+}
+
+/*Footer*/
+
+.footer1{
+    padding: 20px 0;
+    background: #2C2E43;
+    color: white;
+    text-align: center;
+}
+
+.footer1 a{
+    color: white;
+    text-align: center;
+}
+
+.footer2{
+    padding: 5px 0;
+    background: #595260;
+    color: white;
+    text-align: center;
+}
+
+/*BODY IMAGEM*/
+.img1{
+    width: 100% ;
+    height: 350px;
+}
