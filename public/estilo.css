@@ -15,19 +15,25 @@ body{
 header {
     background: black;
     padding: 10px 0;
+    font-family: 'Belleza', sans-serif;
 }
 
 header>.center {
     display: flex;
 }
 
+#header2{
+    background-image: url("https://images.adsttc.com/media/images/6013/8f05/f91c/8125/1500/02d2/large_jpg/Roby_Salao_Beleza-3774.jpg?1611894525");
+	background-size: cover;
+    background-position: center;
+}
 .logo {
     width: 50%;
 }
 
 .logo a {
     font-size: 21px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Belleza', sans-serif;
     color: snow;
     width: 50%;
 }

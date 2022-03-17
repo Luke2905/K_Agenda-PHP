@@ -1,5 +1,5 @@
 <div class="top">
-    <h1>King Cut</h1>
+    <h1></h1>
 </div>
 
 <div class="desc">
