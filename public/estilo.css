@@ -1,45 +1,37 @@
-/*HTML*/
-
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-body{
-    background-image: linear-gradient(black, gold);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
-/*Header*/
+
+/*Menu*/
 
 header {
-    background: black;
+    background: #323232;
     padding: 10px 0;
-    font-family: 'Belleza', sans-serif;
 }
 
 header>.center {
     display: flex;
 }
 
-#header2{
-    background-image: url("https://images.adsttc.com/media/images/6013/8f05/f91c/8125/1500/02d2/large_jpg/Roby_Salao_Beleza-3774.jpg?1611894525");
-	background-size: cover;
-    background-position: center;
-}
 .logo {
     width: 50%;
 }
 
 .logo a {
     font-size: 21px;
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Fredoka One', cursive;
     color: snow;
     width: 50%;
-}
-
-.logo h1{
-    padding-left: 0.5rem;
 }
 
 .menu {
@@ -69,14 +61,14 @@ header>.center {
 .menu a:hover {
     text-decoration: underline;
     font-size: 18px;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 /*Footer*/
 
 .footer1{
     padding: 20px 0;
-    background: #2C2E43;
+    background: #212121;
     color: white;
     text-align: center;
 }
@@ -87,43 +79,226 @@ header>.center {
 }
 
 .footer2{
-    padding: 5px 0;
-    background: #595260;
+    padding: 20px 0;
+    background: #323232;
     color: white;
     text-align: center;
 }
 
-/*BODY IMAGEM*/
+/*Pagina Inicial*/
 
+/*Parallax*/
 
-/*Descricao*/
-.desc{
-    border-radius: 20px;
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    margin: 10px;
-    max-width: 100%;
-    height: 500px;
-    background-color:azure;
+.container_parallax{
+    width: 100%;
+    margin: 0 auto;
 }
 
-.img_desc{
-    margin: 20px;
-    padding-bottom: 20px;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    background-color: #595260;
+main{
+    display: block;
+    background-color: aliceblue;
 }
 
-.txt_desc{
-    margin: 30px;
-    height: auto;
-    width: auto;
+section.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(50vh /*- 35px*/);   
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(https://www.felps.com.br/wp-content/uploads/2020/03/Como-Manter-Seu-Salão-Funcionando-Em-Meio-Ao-Vírus-Covid-19-2-1024x608.jpg);
 }
-h1{
-    color: aliceblue;
-    font-size: 40px;
+
+section.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+section.parallax h1{
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
     text-align: center;
+    font-family: 'Fredoka One', cursive;
+    z-index: 8;
 }
 
+/*Sobre*/
+
+.line_text{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.line_text div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 3px;
+    background: black;
+}
+
+.line_text h2{
+    color: black;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+section.sobre_equipe{
+    padding: 30px 0;
+    background: white;
+}
+
+.equipe_container{
+    width: 50%;
+}
+
+.imagem_circulo{
+    padding: 10px;
+}
+
+.img_avatar{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-image: url(https://cursoeprofissao.com.br/wp-content/uploads/2019/11/barbeiromasculino-1024x640.jpeg);
+}
+.img_avatar2{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-image: url(https://img.r7.com/images/ariel-barbeiro-instagram-sucesso-18122018131137018);
+}
+
+.descicao_avatar{
+    padding-left: 10px;
+    display: inline-block;
+    width: calc(90% - 50px);
+}
+
+.sobre_container{
+    width: 50%;
+}
+
+.sobre_container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 2%;
+}
+
+section.sobre_equipe > .container{
+    display: flex;
+}
+
+/*Galeria*/
+
+.comentarios{
+    padding: 10%;
+    background: gray;
+}
+
+.wrapper .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .card{
+    background: #fff;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 100px 20px 20px 100px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    animation: animate 15s linear infinite;
+    animation-delay: calc(9s * var(--delay));
+  }
+  .outer:hover .card{
+    animation-play-state: paused;
+  }
+  .wrapper .card:last-child{
+    animation-delay: calc(-9s * var(--delay));
+  }
+  @keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+    }
+    5%, 20%{
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+    }
+    25%, 40%{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+    }
+    45%, 60%{
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100%{
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+  .card .content{
+    display: flex;
+    align-items: center;
+  }
+  .wrapper .card .img{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: -5px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  }
+  .card .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card .details{
+    margin-left: 80px;
+  }
+  .details span{
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .card a{
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+    transition: all 0.3s ease;
+  }
+  .card a:hover{
+    transform: scale(0.94);
+  }

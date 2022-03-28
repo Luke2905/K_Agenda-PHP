@@ -1,7 +1,11 @@
 
 
-    <?php include('includes/header.php')?>  
+    <?php include('Paginas/header.php')?>  
 
-    <?php include('includes/body.php')?> 
+    <?php include('Paginas/PaginaInicial.php')?>
 
-    <?php include('includes/footer.php')?>  
+    <?php include('Paginas/galeria_Inicial.php')?>
+
+    <?php include('Paginas/footer.php')?>  
+
+
