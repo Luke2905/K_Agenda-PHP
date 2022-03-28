@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class LoginModel extends Model
+class CadastroModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'login';
+    protected $table            = 'cadastros';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;

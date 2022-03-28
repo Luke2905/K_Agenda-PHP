@@ -5,7 +5,7 @@
         <div class="logo"><a href=""><h1>King<span>.</span>Agendamentos</h1></a></div>
         <div class="menu">
             <ul>
-                <li><a class="selected" href="">Agendamentos</a></li>
+                <li><a class="selected" href="evento">Agendamentos</a></li>
                 <li><a href="">Galeria</a></li>
                 <li><a href="">Profissionais</a></li>
             </ul>

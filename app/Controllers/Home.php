@@ -18,6 +18,13 @@ class Home extends BaseController
         echo view('rodape');
     }
 
+    public function evento()
+    {
+        echo view('cabecalho');
+        echo view('agendamentos');
+        echo view('rodape');
+    }
+
     public function validar()
     {
 
