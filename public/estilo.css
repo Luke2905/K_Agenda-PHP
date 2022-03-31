@@ -208,11 +208,11 @@ section.sobre_equipe > .container{
     display: flex;
 }
 
-/*Galeria*/
+/*Comentarios*/
 
 .comentarios{
     padding: 10%;
-    background: gray;
+    background: white;
 }
 
 .wrapper .outer{
@@ -222,7 +222,8 @@ section.sobre_equipe > .container{
   }
   .wrapper .card{
     background: #fff;
-    width: 430px;
+    width: 40%;
+    height: 8%;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -233,13 +234,13 @@ section.sobre_equipe > .container{
     border-radius: 100px 20px 20px 100px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
     animation: animate 15s linear infinite;
-    animation-delay: calc(9s * var(--delay));
+    animation-delay: calc(3s * var(--delay));
   }
   .outer:hover .card{
     animation-play-state: paused;
   }
   .wrapper .card:last-child{
-    animation-delay: calc(-9s * var(--delay));
+    animation-delay: calc(-3s * var(--delay));
   }
   @keyframes animate {
     0%{
@@ -302,3 +303,239 @@ section.sobre_equipe > .container{
   .card a:hover{
     transform: scale(0.94);
   }
+
+  /*Galeria*/
+
+  .container{
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container .card{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px black;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    float: left;
+    margin: 2px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 2%;
+    margin: 15px;
+}
+
+.container .card:hover{
+    transform: translate(-5px);
+    box-shadow: 0 12px 16px black;
+}
+
+.container .card img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.container .card h3{
+    padding: 2%;
+    font-weight: 800;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0.2rem;
+    font-size: 14px;
+}
+
+  /*Funcionarios*/
+
+  .container_func{
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container_func .card{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px black;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    float: left;
+    margin: 2px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 4%;
+    padding-top: 2%;
+    margin: 15px;
+}
+
+.container_func .card:hover{
+    transform: translate(-5px);
+    box-shadow: 0 12px 16px black;
+}
+
+.container_func .card img{
+    width: 250px;
+    border-radius: 20%;
+}
+
+.container_func .card h3{
+    font-weight: 800;
+}
+
+.container_func .card h4{
+    font-weight: 600;
+}
+
+.container_func .card p{
+    padding: 0.2rem;
+    font-size: 14px;
+}
+
+.container_func .card a{
+    margin: 18px;
+    background: #9C19E0;
+    color: white;
+    padding: 8px 6px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 6px solid #700B97;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.container_func .card a:hover{
+    background: #700B97;
+    border-bottom: 6px solid #3E065F;
+}
+
+.CardImagem{
+    height: 80%;
+}
+
+/*Agendamento*/
+
+.body_form{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://www.felps.com.br/wp-content/uploads/2020/03/Como-Manter-Seu-Salão-Funcionando-Em-Meio-Ao-Vírus-Covid-19-2-1024x608.jpg);
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.formulario{
+margin: calc(100vh - 45px);
+}
+
+.box{
+    margin: 2%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 20px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.010);  
+    backdrop-filter: blur(6px);
+    box-shadow: 15px 15px 25px black;
+}
+fieldset{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+legend{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#opc_cabeleleiro{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#data_agendamento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+#opc_salao{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
