@@ -1,0 +1,34 @@
+/* HOME */
+
+include "./Paginas/cabecalho.php"; 
+include "./Paginas/menu.php"; 
+include "./Paginas/PaginaInicial.php";
+include "./Paginas/footer.php"; 
+
+
+/* Galeria */
+
+include "./Paginas/cabecalho.php"; estatic
+include "./Paginas/menu.php"; estatic
+include "./Paginas/galeria.php";
+include "./Paginas/footer.php"; estatic
+
+
+/* Funcionario*/
+
+include "./Paginas/cabecalho.php";  estatic
+include "./Paginas/menu.php"; estatic
+include "./Paginas/Funcionarios.php";
+include "./Paginas/footer.php";  estatic
+
+
+/*Agendamentos*/
+
+include "./Paginas/cabecalho.php"; 
+include "./Paginas/menu.php"; 
+include "./Paginas/agendamento.php";
+include "./Paginas/footer.php"; 
+
+?>
+
+
