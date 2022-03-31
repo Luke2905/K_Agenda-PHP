@@ -7,26 +7,32 @@ class Home extends BaseController
     public function index()
     {
         echo view('cabecalho');
-        echo view('login');
-        echo view('rodape');
+        echo view('menu');
+        echo view('PaginaInicial');
+        echo view('footer');
     }
 
-    public function layout()
+    public function galeria()
     {
         echo view('cabecalho');
-        echo view('principal');
-        echo view('rodape');
+        echo view('menu');
+        echo view('galeria');
+        echo view('footer');
     }
 
-    public function evento()
+    public function Funcionario()
     {
         echo view('cabecalho');
-        echo view('agendamentos');
-        echo view('rodape');
+        echo view('menu');
+        echo view('Funcionarios');
+        echo view('footer');
     }
 
     public function validar()
     {
-
+        echo view('cabecalho');
+        echo view('menu');
+        echo view('agendamento');
+        echo view('footer');
     }
 }

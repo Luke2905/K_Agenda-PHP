@@ -1,4 +1,4 @@
-/* HOME */
+/* HOME */ X
 
 include "./Paginas/cabecalho.php"; 
 include "./Paginas/menu.php"; 
@@ -6,7 +6,7 @@ include "./Paginas/PaginaInicial.php";
 include "./Paginas/footer.php"; 
 
 
-/* Galeria */
+/* Galeria */ X
 
 include "./Paginas/cabecalho.php"; estatic
 include "./Paginas/menu.php"; estatic
@@ -14,15 +14,15 @@ include "./Paginas/galeria.php";
 include "./Paginas/footer.php"; estatic
 
 
-/* Funcionario*/
+/* Funcionario*/ 
 
-include "./Paginas/cabecalho.php";  estatic
-include "./Paginas/menu.php"; estatic
+include "./Paginas/cabecalho.php";
+include "./Paginas/menu.php";
 include "./Paginas/Funcionarios.php";
-include "./Paginas/footer.php";  estatic
+include "./Paginas/footer.php";
 
 
-/*Agendamentos*/
+/*Agendamentos*/ X
 
 include "./Paginas/cabecalho.php"; 
 include "./Paginas/menu.php"; 
