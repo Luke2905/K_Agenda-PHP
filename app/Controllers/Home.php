@@ -20,7 +20,7 @@ class Home extends BaseController
         echo view('footer');
     }
 
-    public function Funcionario()
+    public function funcionario()
     {
         echo view('cabecalho');
         echo view('menu');
