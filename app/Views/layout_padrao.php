@@ -12,19 +12,21 @@
 </head>
 
 <body>
-  <header>
-    <div class="center">
-      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
-      <div class="logo"><a href="/Home/index">Kings.Agendamento</a></div>
-      <div class="menu">
-        <ul>
-          <li><a href="/Home/galeria">Galeria</a></li>
-          <li><a href="/Home/funcionario">Profissional</a></li>
-          <li><a class="selected" href="/Home/agendamento">Agendamentos</a></li>
-        </ul>
-      </div>
-    </div>
+<header id="header">
+    <a id="logo" href="">Kings Agendamento</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="/Home/galeria">Galeria</a></li>
+        <li><a href="/Home/funcionario">Profissional</a></li>
+        <li><a href="/Home/agendamento">Agendamento</a></li>
+        <li><a href="/Home/index">Localizacão</a></li>
+      </ul>
+    </nav>
   </header>
+  <script src="/script.js"></script>
 
   <?php echo $this->renderSection("pagina_inicial");?>
   <?php echo $this->renderSection("galeria");?>
