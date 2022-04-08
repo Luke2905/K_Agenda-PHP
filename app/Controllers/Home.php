@@ -6,33 +6,21 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo view('cabecalho');
-        echo view('menu');
         echo view('PaginaInicial');
-        echo view('footer');
     }
 
     public function galeria()
     {
-        echo view('cabecalho');
-        echo view('menu');
         echo view('galeria');
-        echo view('footer');
     }
 
     public function funcionario()
     {
-        echo view('cabecalho');
-        echo view('menu');
-        echo view('Funcionarios');
-        echo view('footer');
+        echo view('funcionarios');
     }
 
-    public function validar()
+    public function agendamento()
     {
-        echo view('cabecalho');
-        echo view('menu');
-        echo view('agendamento');
-        echo view('footer');
+        //formulario quebrou irei refazer
     }
 }
