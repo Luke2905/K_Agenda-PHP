@@ -1,3 +1,7 @@
+<?php $this->extend("layout_padrao");?>
+
+<?php $this->section("funcionarios");?>
+
 <div class="container_func">
     <div class="card">
         <div class="CardImagem">
@@ -26,3 +30,5 @@
         <a href="">Comprar</a>
     </div>
 </div>
+
+<?php $this->endSection(); ?>
