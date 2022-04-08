@@ -469,3 +469,54 @@ section.sobre_equipe > .container_sobre{
 .CardImagem{
     height: 80%;
 }
+
+
+/*Responsivo*/
+
+@media screen and (max-width: 768px){
+
+    /*Pagina Inicial*/
+
+    section.sobre_equipe .container_sobre{
+        display: block;
+    }
+    .equipe_container {
+        width: 100%;
+    }
+    .sobre_container {
+        width: 100%;
+    }
+    .flickity-viewport{
+        margin-bottom: 10%;
+    }
+    .comentarios{
+        margin: 20%;
+    }
+    .wrapper .card{
+        width: 80%;
+    }
+    @keyframes animate {
+        0%{
+          opacity: 0;
+          transform: translateY(100%) scale(0.5);
+        }
+        5%, 20%{
+          opacity: 0.4;
+          transform: translateY(100%) scale(0.7);
+        }
+        25%, 40%{
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0%) scale(1);
+        }
+        45%, 60%{
+          opacity: 0.4;
+          transform: translateY(-100%) scale(0.7);
+        }
+        65%, 100%{
+          opacity: 0;
+          transform: translateY(-100%) scale(0.5);
+        }
+      }
+
+}
