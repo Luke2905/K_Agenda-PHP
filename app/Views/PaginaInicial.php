@@ -51,6 +51,17 @@
     </div>
 </section>
 
+<h1>Galeria - Melhores Cortes</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "adaptiveHeight": true }'>
+  <div class="carousel-cell"></div> <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height2"></div>  <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height3"></div> <!-- Imagem -->
+  <div class="carousel-cell"></div> <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height2"></div> <!-- Imagem -->
+</div>
+
 <div class="comentarios">
   <div class="wrapper">
     <div class="outer">
