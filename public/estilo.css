@@ -519,4 +519,21 @@ section.sobre_equipe > .container_sobre{
         }
       }
 
+      /*Galeria*/
+
+      .container .card{
+        width: 100%;
+        height: 100%;
+      }
+
+      .CardImagem{
+        height: 100%;
+        width: 100%;
+      }
+
+      .container .card img{
+          width: 100%;
+          height: 100%;
+      }
+
 }
