@@ -28,7 +28,7 @@ header>.center {
 }
 
 .logo a {
-    font-size: 21px;
+    font-size: 25px;
     font-family: 'Fredoka One', cursive;
     color: snow;
     width: 50%;
@@ -45,7 +45,7 @@ header>.center {
 
 .menu li {
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
 }
 
@@ -103,7 +103,7 @@ section.parallax{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(50vh /*- 35px*/);   
+    height: calc(100vh - 45px);   
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -204,14 +204,14 @@ section.sobre_equipe{
     margin-top: 2%;
 }
 
-section.sobre_equipe > .container{
+section.sobre_equipe > .container_sobre{
     display: flex;
 }
 
 /*Comentarios*/
 
 .comentarios{
-    padding: 10%;
+    padding: 5%;
     background: white;
 }
 
@@ -222,8 +222,8 @@ section.sobre_equipe > .container{
   }
   .wrapper .card{
     background: #fff;
-    width: 40%;
-    height: 8%;
+    width: 34%;
+    height: 6%;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -245,24 +245,24 @@ section.sobre_equipe > .container{
   @keyframes animate {
     0%{
       opacity: 0;
-      transform: translateY(100%) scale(0.5);
+      transform: translateX(100%) scale(0.5);
     }
     5%, 20%{
       opacity: 0.4;
-      transform: translateY(100%) scale(0.7);
+      transform: translateX(100%) scale(0.7);
     }
     25%, 40%{
       opacity: 1;
       pointer-events: auto;
-      transform: translateY(0%) scale(1);
+      transform: translateX(0%) scale(1);
     }
     45%, 60%{
       opacity: 0.4;
-      transform: translateY(-100%) scale(0.7);
+      transform: translateX(-100%) scale(0.7);
     }
     65%, 100%{
       opacity: 0;
-      transform: translateY(-100%) scale(0.5);
+      transform: translateX(-100%) scale(0.5);
     }
   }
   .card .content{

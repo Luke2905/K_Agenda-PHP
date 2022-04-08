@@ -11,7 +11,7 @@
 </div>
 
 <section class="sobre_equipe">
-  <div class="container">
+  <div class="container_sobre">
     <div class="equipe_container">
       <div class="line_text">
         <div style="width: 30px;"></div>
@@ -60,10 +60,9 @@
               alt=""></div>
           <div class="details">
             <span class="name">Sumit Kapoor</span>
-            <p>Profissionais e experientes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
           </div>
         </div>
-        <a href="#">Gostei</a>
       </div>
       <div class="card" style="--delay:0;">
         <div class="content">
@@ -71,10 +70,9 @@
               alt=""></div>
           <div class="details">
             <span class="name">Andrew Neil</span>
-            <p>Preço excelente</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
           </div>
         </div>
-        <a href="#">Gostei</a>
       </div>
       <div class="card" style="--delay:1;">
         <div class="content">
@@ -82,10 +80,9 @@
               alt=""></div>
           <div class="details">
             <span class="name">Jasmine Carter</span>
-            <p>Otimo lugar e otimo preço</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
           </div>
         </div>
-        <a href="#">Gostei</a>
       </div>
       <div class="card" style="--delay:2;">
         <div class="content">
@@ -93,10 +90,9 @@
               alt=""></div>
           <div class="details">
             <span class="name">Justin Chung</span>
-            <p>Excelentes profissionais</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
           </div>
         </div>
-        <a href="#">Gostei</a>
       </div>
       <div class="card" style="--delay:2;">
         <div class="content">
@@ -104,10 +100,9 @@
               alt=""></div>
           <div class="details">
             <span class="name">Adrina Calvo</span>
-            <p>Otimos Cortes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam </p>
           </div>
         </div>
-        <a href="#">Gostei</a>
       </div>
     </div>
   </div>
