@@ -217,6 +217,7 @@ section.sobre_equipe > .container_sobre{
   /* transition height change */
   .flickity-viewport {
     transition: height 0.2s;
+     margin-bottom: 10%;
   }
   
   .carousel-cell {
@@ -245,6 +246,7 @@ section.sobre_equipe > .container_sobre{
 
 .comentarios{
     padding: 5%;
+    margin: 10%;
     background: white;
 }
 
@@ -255,7 +257,7 @@ section.sobre_equipe > .container_sobre{
   }
   .wrapper .card{
     background: #fff;
-    width: 34%;
+    width: 80%;
     height: 6%;
     display: flex;
     align-items: center;
@@ -278,24 +280,24 @@ section.sobre_equipe > .container_sobre{
   @keyframes animate {
     0%{
       opacity: 0;
-      transform: translateX(100%) scale(0.5);
+      transform: translateY(100%) scale(0.5);
     }
     5%, 20%{
       opacity: 0.4;
-      transform: translateX(100%) scale(0.7);
+      transform: translateY(100%) scale(0.7);
     }
     25%, 40%{
       opacity: 1;
       pointer-events: auto;
-      transform: translateX(0%) scale(1);
+      transform: translateY(0%) scale(1);
     }
     45%, 60%{
       opacity: 0.4;
-      transform: translateX(-100%) scale(0.7);
+      transform: translateY(-100%) scale(0.7);
     }
     65%, 100%{
       opacity: 0;
-      transform: translateX(-100%) scale(0.5);
+      transform: translateY(-100%) scale(0.5);
     }
   }
   .card .content{
@@ -473,7 +475,7 @@ section.sobre_equipe > .container_sobre{
 
 /*Responsivo*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 770px){
 
     /*Pagina Inicial*/
 
@@ -490,7 +492,7 @@ section.sobre_equipe > .container_sobre{
         margin-bottom: 10%;
     }
     .comentarios{
-        margin: 20%;
+        margin: 30%;
     }
     .wrapper .card{
         width: 80%;
@@ -548,4 +550,16 @@ section.sobre_equipe > .container_sobre{
         height: 100%; 
       }
 
+}
+
+@media screen and (max-width: 1050px){
+    .comentarios{
+        margin: 20%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .comentarios{
+        margin: 35%;
+    }
 }
