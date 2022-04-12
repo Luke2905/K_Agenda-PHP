@@ -9,7 +9,7 @@
         </div>
         <h3>CORTE</h3>
         <h4>VALOR</h4>
-        <a href="">Comprar</a>
+        <a href="">Agendar</a>
     </div>
 
     <div class="card">
@@ -18,7 +18,7 @@
         </div>
         <h3>CORTE</h3>
         <h4>VALOR</h4>
-        <a href="">Comprar</a>
+        <a href="">Agendar</a>
     </div>
 
     <div class="card">
@@ -27,7 +27,7 @@
         </div>
         <h3>CORTE</h3>
         <h4>VALOR</h4>
-        <a href="">Comprar</a>
+        <a href="">Agendar</a>
     </div>
 </div>
 

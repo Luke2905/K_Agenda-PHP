@@ -23,4 +23,14 @@ class Home extends BaseController
     {
         //formulario quebrou irei refazer
     }
+
+    public function localizacao()
+    {
+        echo view('localizacao');
+    }
+
+    public function mapa()
+    {
+        echo view('mapa');
+    }
 }

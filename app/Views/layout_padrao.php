@@ -13,7 +13,7 @@
 
 <body>
 <header id="header">
-    <a id="logo" href="">Kings Agendamento</a>
+    <a id="logo" href="/Home/index">Kings Agendamento</a>
     <nav id="nav">
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
         <span id="hamburger"></span>
@@ -22,7 +22,7 @@
         <li><a href="/Home/galeria">Galeria</a></li>
         <li><a href="/Home/funcionario">Profissional</a></li>
         <li><a href="/Home/agendamento">Agendamento</a></li>
-        <li><a href="/Home/index">Localizacão</a></li>
+        <li><a href="/Home/localizacao">Localizacão</a></li>
       </ul>
     </nav>
   </header>
@@ -32,6 +32,8 @@
   <?php echo $this->renderSection("galeria");?>
   <?php echo $this->renderSection("funcionarios");?>
   <?php echo $this->renderSection("agendamento");?>
+  <?php echo $this->renderSection("localizacao");?>
+  <?php echo $this->renderSection("mapa");?>
 
 </body>
 
