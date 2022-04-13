@@ -14,6 +14,7 @@
   <title>King.Agendamentos</title>
 </head>
 
+<!--Header-->
 <body>
 <header id="header">
     <a id="logo" href="/Home/index"><img src="/img/logo_branco.png" alt=""></a>
@@ -39,6 +40,8 @@
   <?php echo $this->renderSection("mapa");?>
 
 </body>
+
+<!--footer-->
 
 <footer class="footer1">
   <div class="center">

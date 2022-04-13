@@ -2,6 +2,7 @@
 
 <?php $this->section("pagina_inicial");?>
 
+<!--Paralax-->
 <div class="container_parallax">
   <main>
     <section class="parallax">
@@ -10,6 +11,7 @@
   </main>
 </div>
 
+<!--Sobre-->
 <section class="sobre_equipe">
   <div class="container_sobre">
     <div class="equipe_container">
@@ -51,6 +53,8 @@
     </div>
 </section>
 
+<!--Galeria-->
+
 <h1>Galeria - Melhores Cortes</h1>
 
 <!-- Flickity HTML init -->
@@ -61,6 +65,8 @@
   <div class="carousel-cell"></div> <!-- Imagem -->
   <div class="carousel-cell carousel-cell--height2"></div> <!-- Imagem -->
 </div>
+
+<!--Comentarios-->
 
 <div class="comentarios">
   <div class="wrapper">
