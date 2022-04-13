@@ -565,6 +565,8 @@ section.barbearia_img_localizacao_parallax h1:hover{
 
 /*Responsivo*/
 
+/*Google maps*/
+
 .map-responsive{
 
   overflow:hidden;
@@ -595,6 +597,8 @@ section.barbearia_img_localizacao_parallax h1:hover{
 
   /*Pagina Inicial*/
 
+  /*Sobre*/
+
   section.sobre_equipe .container_sobre {
     display: block;
   }
@@ -606,6 +610,8 @@ section.barbearia_img_localizacao_parallax h1:hover{
   .sobre_container {
     width: 100%;
   }
+  
+  /* Comentarios*/
 
   .flickity-viewport {
     margin-bottom: 10%;
@@ -691,9 +697,14 @@ section.barbearia_img_localizacao_parallax h1:hover{
 }
 
 @media screen and (max-width: 1050px) {
+
+  /*comentarios*/
+
   .comentarios {
     margin: 20%;
   }
+
+  /*Menu mobile*/
 
   #menu {
     display: block;
@@ -770,6 +781,9 @@ section.barbearia_img_localizacao_parallax h1:hover{
 }
 
 @media screen and (max-width: 650px) {
+
+  /*Comentarios*/
+  
   .comentarios {
     margin: 35%;
   }
