@@ -79,6 +79,10 @@ a:hover {
   width: 50%;
 }
 
+.footer1 .center{
+  width: 100%;
+}
+
 .footer1 {
   display: flex;
   padding: 20px 0;
@@ -674,6 +678,14 @@ section.barbearia_img_localizacao_parallax h1:hover{
   .container_func .card img {
     width: 100%;
     height: 100%;
+  }
+
+  .footer1 {
+    display: inline-block
+  }
+
+  .w50{
+    width: 100%;
   }
 
 }

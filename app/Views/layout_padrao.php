@@ -45,6 +45,7 @@
     <div class="w50">
       <p><i class="fas fa-envelope"></i> kingcut@gmail.com</p>
       <p><i class="fas fa-phone-alt"></i> (XX) 9XXXX-XXXX</p>
+      <br>
     </div>
   </div>
   <div class="w50">
