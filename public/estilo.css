@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Libre Baskerville', sans-serif;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -10,6 +12,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2%;
+}
+
+h3,h4,h5,h6,p,span{
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Menu*/
@@ -35,6 +41,10 @@ a:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+
+#header img{
+  height: 65px;
 }
 
 #header {
@@ -65,11 +75,17 @@ a:hover {
 
 /*Footer*/
 
+.w50{
+  width: 50%;
+}
+
 .footer1 {
+  display: flex;
   padding: 20px 0;
   background: #212121;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 .footer1 a {
@@ -102,7 +118,7 @@ section.parallax {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 70px);
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -123,11 +139,11 @@ section.parallax::after {
 }
 
 section.parallax h1 {
+  font-family: 'Libre Baskerville', serif;
   color: white;
   font-weight: 900;
   font-size: 60px;
   text-align: center;
-  font-family: 'Fredoka One', cursive;
   z-index: 8;
 }
 
@@ -153,7 +169,7 @@ section.parallax h1 {
 
 .line_text h2 {
   color: black;
-  font-weight: normal;
+  font-weight: bolf;
   font-size: 27px;
 }
 
@@ -367,7 +383,7 @@ section.sobre_equipe>.container_sobre {
 
 .container {
   width: 100%;
-  min-height: calc(100vh - 45px);
+  min-height: calc(100vh - 70px);
   max-width: auto;
   height: auto;
   display: flex;
@@ -423,7 +439,7 @@ section.sobre_equipe>.container_sobre {
 
 .container_func {
   width: 100%;
-  min-height: calc(100vh - 45px);
+  min-height: calc(100vh - 70px);
   max-width: auto;
   height: auto;
   display: flex;
@@ -507,7 +523,7 @@ section.barbearia_img_localizacao_parallax {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 45px);
+  height:25vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -515,7 +531,8 @@ section.barbearia_img_localizacao_parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(https://www.felps.com.br/wp-content/uploads/2020/03/Como-Manter-Seu-Salão-Funcionando-Em-Meio-Ao-Vírus-Covid-19-2-1024x608.jpg);
+  background-image: url(/img/Wallpaper_Branco.png);
+  margin: 0.5% 0 0.5% 0;
 }
 
 section.barbearia_img_localizacao_parallax::after {
@@ -524,7 +541,7 @@ section.barbearia_img_localizacao_parallax::after {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 section.barbearia_img_localizacao_parallax h1 {
@@ -532,8 +549,12 @@ section.barbearia_img_localizacao_parallax h1 {
   font-weight: 900;
   font-size: 60px;
   text-align: center;
-  font-family: 'Fredoka One', cursive;
   z-index: 8;
+}
+
+section.barbearia_img_localizacao_parallax h1:hover{
+  font-size: 65px;
+  transition: 0.5s;
 }
 
 
@@ -544,7 +565,7 @@ section.barbearia_img_localizacao_parallax h1 {
 
   overflow:hidden;
 
-  padding-bottom:100vh;
+  padding-bottom: calc(100vh - 70px);
 
   position:relative;
 
@@ -558,7 +579,7 @@ section.barbearia_img_localizacao_parallax h1 {
 
   top:0;
 
-  height:100%;
+  height:calc(100vh - 70px);
 
   width:100%;
 
