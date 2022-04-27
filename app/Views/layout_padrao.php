@@ -30,7 +30,7 @@
       </ul>
     </nav>
   </header>
-  <script src="/script.js"></script>
+  <script src="/menu_mobile.js"></script>
 
   <?php echo $this->renderSection("pagina_inicial");?>
   <?php echo $this->renderSection("galeria");?>

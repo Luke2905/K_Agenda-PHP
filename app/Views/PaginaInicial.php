@@ -6,7 +6,7 @@
 <div class="container_parallax">
   <main>
     <section class="parallax">
-      <h1>Kings</h1>
+      <img class="logo" src="/img/icon_branco.png" alt="">
     </section>
   </main>
 </div>

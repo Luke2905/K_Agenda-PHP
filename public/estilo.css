@@ -146,12 +146,11 @@ section.parallax::after {
   background: rgba(0, 0, 0, 0.4);
 }
 
-section.parallax h1 {
-  font-family: 'Libre Baskerville', serif;
-  color: white;
-  font-weight: 900;
-  font-size: 60px;
-  text-align: center;
+section.parallax .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vh;
   z-index: 8;
 }
 
@@ -288,7 +287,6 @@ section.sobre_equipe>.container_sobre {
 .wrapper .card {
   background: #fff;
   width: 80%;
-  height: 6%;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -621,9 +619,7 @@ section.barbearia_img_localizacao_parallax h1:hover{
     margin-bottom: 10%;
   }
 
-  .comentarios {
-    margin: 30%;
-  }
+  
 
   .wrapper .card {
     width: 80%;
@@ -700,6 +696,11 @@ section.barbearia_img_localizacao_parallax h1:hover{
 
   /*Menu mobile*/
 
+  #header {
+    justify-content: space-around;
+  }
+
+
   #menu {
     display: block;
     position: absolute;
@@ -775,20 +776,15 @@ section.barbearia_img_localizacao_parallax h1:hover{
 
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 900px) {
 
   /*comentarios*/
 
   .comentarios {
-    margin: 20%;
+    margin: 20% 0 20% 0;
   }
 }
 
 @media screen and (max-width: 650px) {
 
-  /*Comentarios*/
-  
-  .comentarios {
-    margin: 35%;
-  }
 }
