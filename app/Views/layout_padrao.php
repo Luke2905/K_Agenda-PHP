@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/estilo.css" />
+  <link id="estilo" class="dia" rel="stylesheet" href="/estilo.css" />
   <link rel="stylesheet" href="/flickity.css">
   <script src="/flickity.pkgd.js"></script>
   <title>King.Agendamentos</title>
@@ -16,6 +16,10 @@
 
 <!--Header-->
 <body>
+
+<button onclick="estilo()"> Dark/Light </button>
+<script src="/estilo.js"></script>
+
 <header id="header">
     <a id="logo" href="/Home/index"><img src="/img/logo_branco.png" alt=""></a>
     <nav id="nav">
