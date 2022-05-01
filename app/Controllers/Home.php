@@ -33,4 +33,9 @@ class Home extends BaseController
     {
         echo view('mapa');
     }
+
+    public function login()
+    {
+        echo view('login');
+    }
 }
