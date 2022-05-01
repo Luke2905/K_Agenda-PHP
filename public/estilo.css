@@ -77,6 +77,11 @@ a:hover {
   color: white;
 }
 
+#avatar{
+  height: 40px;
+  border-radius: 100px;
+}
+
 /*Footer*/
 
 .w50{
@@ -787,4 +792,37 @@ section.barbearia_img_localizacao_parallax h1:hover{
 
 @media screen and (max-width: 650px) {
 
+}
+
+/*Pagina Administrador*/
+
+/*Graficos*/
+
+#grafico1{
+  grid-area: 3 / 1 / 4 / 4;
+  margin: 10px;
+}
+#grafico2{
+  grid-area: 1 / 1 / 2 / 2;
+  padding-top: 20px;
+  margin: 10px;
+  height: 400px;
+  width: 400px;
+}
+#agenda{
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 10px;
+  position: relative;
+  height: 200px;
+  overflow: auto;
+  border: solid;
+}
+.graficos {
+  height: 100%;
+  width: 100%;
+    margin: 10px;
+    display: grid;
+}
+.table-wrapper-scroll-y {
+  display: block;
 }
