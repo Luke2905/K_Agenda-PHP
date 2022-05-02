@@ -1,17 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root{
-  --body: white;
+
+  /*padrao*/
+  --background-color: white;
   --text-color: black;
+
+  /*parallax*/
   --parallax-bg: url(/img/Background_Light.jpg);
-  --parallax-logo: url(/img/icon_branco.png);
+  --parallax-logo: url(/img/icon_preto.png);
+
+  /*Comentarios*/
+  --comentarios-bg: white;
+  --border-img-comentarios: ghostwhite;
+
+  /*localizacao*/
+  --localizacao-bg: url(/img/Wallpaper_Branco.png);
 }
 
 .dark-mode:root {
-  --body: black;
+
+  /*Padrao*/
+  --background-color: black;
   --text-color: white;
+
+  /*parallax*/
   --parallax-bg: url(/img/Background_Dark.jpg);
   --parallax-logo: url(/img/icon_branco.png);
+
+  /*Comentyarios*/
+  --comentarios-bg: grey;
+  --border-img-comentarios: darkgray;
+
+    /*localizacao*/
+    --localizacao-bg: url(/img/Wallpaper_Preto.png);
 }
 
 
@@ -25,7 +47,7 @@
 
 body{
   min-width: 100vh;
-  background-color: var(--body);
+  background-color: var(--background-color);
 }
 
 .center {
@@ -36,6 +58,11 @@ body{
 
 h3,h4,h5,h6,p,span{
   font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+h1,h2{
+  color: var(--text-color);
 }
 
 /*Menu*/
@@ -107,7 +134,6 @@ a:hover {
   display: flex;
   padding: 20px 0;
   background: #212121;
-  color: white;
   text-align: center;
   width: 100%;
 }
@@ -115,6 +141,10 @@ a:hover {
 .footer1 a {
   color: white;
   text-align: center;
+}
+
+.footer_p {
+  color: white;
 }
 
 .footer2 {
@@ -150,7 +180,7 @@ section.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(/img/Background_Light.jpg);
+  background-image: var(--parallax-bg);
 }
 
 section.parallax::after {
@@ -167,7 +197,7 @@ section.parallax .logo {
   margin-left: auto;
   margin-right: auto;
   width: 60vh;
-  content: url(/img/icon_branco.png);
+  content: var(--parallax-logo);
   z-index: 8;
 }
 
@@ -179,7 +209,7 @@ section.parallax .logo {
   margin-left: 2%;
   position: relative;
   display: inline-block;
-  color: black;
+  color: var(--text-color);
 }
 
 .line_text div {
@@ -188,18 +218,18 @@ section.parallax .logo {
   top: 0;
   width: 200px;
   height: 3px;
-  background: black;
+  background: var(--background-color);
 }
 
 .line_text h2 {
-  color: black;
+  color: var(--text-color);
   font-weight: bolf;
   font-size: 27px;
 }
 
 section.sobre_equipe {
   padding: 30px 0;
-  background: white;
+  background: var(--background-color);
 }
 
 .equipe_container {
@@ -239,7 +269,7 @@ section.sobre_equipe {
 }
 
 .sobre_container p {
-  color: black;
+  color: var(--text-color);
   font-size: 15px;
   margin-top: 2%;
 }
@@ -251,7 +281,7 @@ section.sobre_equipe>.container_sobre {
 /*Galeria Carrosel*/
 
 .carousel {
-  background: #FAFAFA;
+  background: var(--background_color);
 }
 
 /* transition height change */
@@ -292,7 +322,7 @@ section.sobre_equipe>.container_sobre {
 .comentarios {
   padding: 5%;
   margin: 10%;
-  background: white;
+  background: var(--background-color);
 }
 
 .wrapper .outer {
@@ -302,7 +332,7 @@ section.sobre_equipe>.container_sobre {
 }
 
 .wrapper .card {
-  background: #fff;
+  background: var(--comentarios-bg);
   width: 80%;
   display: flex;
   align-items: center;
@@ -367,7 +397,7 @@ section.sobre_equipe>.container_sobre {
   width: 90px;
   position: absolute;
   left: -5px;
-  background: #fff;
+  background: var(--border-img-comentarios);
   border-radius: 50%;
   padding: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -400,7 +430,7 @@ section.sobre_equipe>.container_sobre {
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 5px;
 }
 
@@ -416,7 +446,7 @@ section.sobre_equipe>.container_sobre {
   float: left;
   margin: 2px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: var(--background-color);
   padding: 2%;
   margin: 15px;
 }
@@ -456,7 +486,7 @@ section.sobre_equipe>.container_sobre {
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 5px;
 }
 
@@ -472,7 +502,7 @@ section.sobre_equipe>.container_sobre {
   float: left;
   margin: 2px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: var(--background-color);
   padding: 4%;
   padding-top: 2%;
   margin: 15px;
@@ -541,7 +571,7 @@ section.barbearia_img_localizacao_parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(/img/Wallpaper_Branco.png);
+  background-image: var(--localizacao-bg);
   margin: 0.5% 0 0.5% 0;
 }
 
@@ -555,7 +585,7 @@ section.barbearia_img_localizacao_parallax::after {
 }
 
 section.barbearia_img_localizacao_parallax h1 {
-  color: white;
+  color: var(--text-color);
   font-weight: 900;
   font-size: 60px;
   text-align: center;

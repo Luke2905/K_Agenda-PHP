@@ -53,8 +53,8 @@
 <footer class="footer1">
   <div class="center">
     <div class="w50">
-      <p><i class="fas fa-envelope"></i> kingcut@gmail.com</p>
-      <p><i class="fas fa-phone-alt"></i> (XX) 9XXXX-XXXX</p>
+      <p class="footer_p"><i class="fas fa-envelope"></i> kingcut@gmail.com</p>
+      <p class="footer_p">(XX) 9XXXX-XXXX</p>
       <br>
     </div>
   </div>
