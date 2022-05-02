@@ -17,7 +17,10 @@
 <!--Header-->
 <body>
 
-<button onclick="estilo()"> Dark/Light </button>
+<label for="modo-escuro">
+    <a class="button">Modo dark</a>
+</label>
+<input type="checkbox" id="modo-escuro">
 <script src="/estilo.js"></script>
 
 <header id="header">
