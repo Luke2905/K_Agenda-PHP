@@ -17,7 +17,10 @@
 <!--Header-->
 <body>
 
-<button onclick="estilo()"> Dark/Light </button>
+<label for="modo-escuro">
+    <a class="button">Modo dark</a>
+</label>
+<input type="checkbox" id="modo-escuro">
 <script src="/estilo.js"></script>
 
 <header id="header">
@@ -51,8 +54,8 @@
 <footer class="footer1">
   <div class="center">
     <div class="w50">
-      <p><i class="fas fa-envelope"></i> kingcut@gmail.com</p>
-      <p><i class="fas fa-phone-alt"></i> (XX) 9XXXX-XXXX</p>
+      <p class="footer_p"><i class="fas fa-envelope"></i> kingcut@gmail.com</p>
+      <p class="footer_p">(XX) 9XXXX-XXXX</p>
       <br>
     </div>
   </div>

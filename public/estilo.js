@@ -1,16 +1,20 @@
-function estilo() {
-    const link = document.getElementById('estilo');
-    var mode = document.getElementById('estilo');
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeStorage = localStorage.getItem('dark-mode')
+    const root = document.querySelector(':root')
+    const inputDarkMode = document.getElementById('modo-escuro')
 
-
-    if (mode.classList=='dia') {
-        link.href="/estilo_black.css"
-        mode.classList.remove('dia');
-        mode.classList.add('noite');
-    } else if (mode.classList=='noite'){
-        link.href="/estilo.css"
-        mode.classList.remove('noite');
-        mode.classList.add('dia');
+    if(darkModeStorage){
+        root.classList.add("dark-mode");
+        inputDarkMode.checked = true;
     }
 
-  }
+    inputDarkMode.addEventListener('change', () => {
+        if(inputDarkMode.checked){
+            root.classList.add("dark-mode");
+            localStorage.setItem('dark-mode', true);
+        }else{
+            root.classList.remove("dark-mode");
+            localStorage.removeItem('dark-mode');
+        }
+   })
+})
