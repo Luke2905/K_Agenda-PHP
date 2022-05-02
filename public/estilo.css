@@ -16,6 +16,7 @@
 
   /*localizacao*/
   --localizacao-bg: url(/img/Wallpaper_Branco.png);
+  --localizacao-rgba: rgba(130, 130, 130, 0.5);
 }
 
 .dark-mode:root {
@@ -34,6 +35,7 @@
 
     /*localizacao*/
     --localizacao-bg: url(/img/Wallpaper_Preto.png);
+    --localizacao-rgba: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -586,7 +588,7 @@ section.barbearia_img_localizacao_parallax::after {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--localizacao-rgba)
 }
 
 section.barbearia_img_localizacao_parallax h1 {
