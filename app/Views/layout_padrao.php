@@ -34,6 +34,7 @@
         <li><a href="/Home/funcionario">Profissional</a></li>
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localizacão</a></li>
+        <li><a href="/Home/login">Login</a></li>
       </ul>
     </nav>
   </header>
