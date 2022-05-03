@@ -47,7 +47,7 @@
    Login
   </div>
   <div class="card-body">
-   <form action="/Admin/adminHome" method="post">
+   <form action="/Home/autenticar" method="post">
        <label class="form-label" for="">Usuario</label>
        <input class="form-control" type="text" name="usuario" id="">
        <label class="form-label" for="">Senha</label>
@@ -56,7 +56,7 @@
        <a href="#">Novo Usuario</a>
    </form>
   </div>
-</div></div>
+</div class="<?php echo isset($classe)? $classe: '' ?>"><?php echo isset($erro)? $erro : ''?></div>
         <div class="col"></div>
     </div>
 </div>
