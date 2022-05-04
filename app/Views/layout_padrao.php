@@ -72,10 +72,7 @@
   <div class="clear"></div>
 </footer>
 <footer class="footer2">
-  <p>
-    <i class="far fa-copyright"></i> Atividade de PRWII - ETECJK - Professor:
-    Jefferson
-  </p>
+  <p class="footer_p">Atividade de PRWII - ETECJK - Professor: Jefferson</p>
 </footer>
 
 </html>

@@ -11,7 +11,7 @@
   --parallax-logo: url(/img/icon_preto.png);
 
   /*Comentarios*/
-  --comentarios-bg: white;
+  --comentarios-color: white;
   --border-img-comentarios: ghostwhite;
 
   /*localizacao*/
@@ -22,15 +22,18 @@
 .dark-mode:root {
 
   /*Padrao*/
-  --background-color: black;
+  --background-color: #121212;
   --text-color: white;
 
   /*parallax*/
   --parallax-bg: url(/img/Background_Dark.jpg);
   --parallax-logo: url(/img/icon_branco.png);
 
+  /*Geral*/
+  --box-bg: #1F1F1F;
+
   /*Comentyarios*/
-  --comentarios-bg: grey;
+  --comentarios-color: grey;
   --border-img-comentarios: darkgray;
 
     /*localizacao*/
@@ -225,7 +228,7 @@ section.parallax .logo {
   top: 0;
   width: 200px;
   height: 3px;
-  background: var(--background-color);
+  background: var(--text-color);
 }
 
 .line_text h2 {
@@ -282,7 +285,10 @@ section.sobre_equipe {
 }
 
 section.sobre_equipe>.container_sobre {
+  background-color: var(--box-bg);
   display: flex;
+  margin: 10px;
+  border-radius: 20px;
 }
 
 /*Galeria Carrosel*/
@@ -327,9 +333,10 @@ section.sobre_equipe>.container_sobre {
 /*Comentarios*/
 
 .comentarios {
-  padding: 5%;
-  margin: 10%;
-  background: var(--background-color);
+  border-radius: 20px;
+  padding: 20%;
+  margin: 10px;
+  background: var(--box-bg);
 }
 
 .wrapper .outer {
@@ -339,7 +346,7 @@ section.sobre_equipe>.container_sobre {
 }
 
 .wrapper .card {
-  background: var(--comentarios-bg);
+  background: var(--comentarios-color);
   width: 80%;
   display: flex;
   align-items: center;
@@ -453,7 +460,8 @@ section.sobre_equipe>.container_sobre {
   float: left;
   margin: 2px;
   margin-bottom: 10px;
-  background-color: var(--background-color);
+  background-color: var(--box-bg);
+  box-shadow: 0 2px 2px black;
   padding: 2%;
   margin: 15px;
 }
@@ -509,7 +517,7 @@ section.sobre_equipe>.container_sobre {
   float: left;
   margin: 2px;
   margin-bottom: 10px;
-  background-color: var(--background-color);
+  background-color: var(--box-bg);
   padding: 4%;
   padding-top: 2%;
   margin: 15px;
@@ -636,6 +644,14 @@ section.barbearia_img_localizacao_parallax h1:hover{
 
 }
 
+@media screen and (min-width:900px){  
+  .comentarios{
+    padding: 15%;
+  }
+}
+
+
+
 @media screen and (max-width: 770px) {
 
   /*Pagina Inicial*/
@@ -660,7 +676,9 @@ section.barbearia_img_localizacao_parallax h1:hover{
     margin-bottom: 10%;
   }
 
-  
+  .comentarios{
+    padding: 20%;
+  }
 
   .wrapper .card {
     width: 80%;
@@ -815,15 +833,6 @@ section.barbearia_img_localizacao_parallax h1:hover{
     top: -7px;
   }
 
-}
-
-@media screen and (max-width: 900px) {
-
-  /*comentarios*/
-
-  .comentarios {
-    margin: 20% 0 20% 0;
-  }
 }
 
 @media screen and (max-width: 650px) {

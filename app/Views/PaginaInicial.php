@@ -16,7 +16,7 @@
   <div class="container_sobre">
     <div class="equipe_container">
       <div class="line_text">
-        <div style="width: 30px;"></div>
+        <div style="width: 20px;"></div>
         <h2>Equipe</h2>
       </div>
       <div class="imagem_circulo">
@@ -38,7 +38,7 @@
     </div>
     <div class="sobre_container">
       <div class="line_text">
-        <div style="width: 30px;"></div>
+        <div class="line" style="width: 20px;"></div>
         <h2>Sobre</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam
           culpa consequuntur vero dicta dolor vitae. Enim voluptatem sint impedit nesciunt corporis, quas ut laboriosam
