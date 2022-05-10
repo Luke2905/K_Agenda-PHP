@@ -5,17 +5,15 @@
 <div class="container_func">
     
 <?php 
-    $model = model('LoginModel');
-    $dados = $model ->find();
 
-foreach($dados as $row){
+foreach($profissionais as $row){
 
     echo "<div class='card'>";
     echo "<div class='CardImagem'>";
-    echo "<img  src='https://homensquesecuidam.com/wp-content/uploads/2017/10/cortes-de-cabelo-masculino-curto-homens-que-se-cuidam-a.jpg' alt=''>";
+    echo "<img  src=".$row['foto_pro']."alt=''>";
     echo "</div>";
-    echo "<h3>".$row['nome']."</h3>";
-    echo "<h4>".$row['email']."</h4>";
+    echo "<h3>".$row['nome_pro']."</h3>";
+    echo "<h4>".$row['telefone_pro']."</h4>";
     echo "<a href=''>Agendar</a>";
     echo "</div>";
 

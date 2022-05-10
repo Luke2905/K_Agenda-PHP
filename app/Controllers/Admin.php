@@ -29,7 +29,7 @@ class Admin extends BaseController
         if($user){
             echo "<span class='help-block' style='color: Blue;'>Cadastro efetuado com sucesso!</span><br>";
             echo "<a href='/Home/login'>Pagina de Login</a><br>";
-            echo "< href='/Home/index'>Pagina principal</a>";
+            echo "<a href='/Home/index'>Pagina principal</a>";
     }else {
         echo "<span class='help-block' style='color: Red;'>Erro no cadastro!</span>";
     }
