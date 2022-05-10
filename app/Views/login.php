@@ -22,6 +22,9 @@
         margin-top: 50px;
         text-align: center;
     }
+    .erro{
+        color: white;
+    }
     .card{
         background-color: transparent;
         color: white;
@@ -47,16 +50,16 @@
    Login
   </div>
   <div class="card-body">
-   <form action="/Admin/adminHome" method="post">
+   <form action="/Home/autenticar" method="post">
        <label class="form-label" for="">Usuario</label>
        <input class="form-control" type="text" name="usuario" id="">
        <label class="form-label" for="">Senha</label>
        <input class="form-control" type="password" name="senha" id="">
        <button class="mt-3 form-control btn btn-primary" type="submit">Login</button>
-       <a href="#">Novo Usuario</a>
+       <a href="/Admin/novoUser">Novo Usuario</a>
    </form>
   </div>
-</div></div>
+</div class="erro"><?php echo isset($erro)? $erro : ''?></div>
         <div class="col"></div>
     </div>
 </div>

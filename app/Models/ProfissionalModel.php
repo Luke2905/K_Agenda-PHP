@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Profissionais extends Model
+class ProfissionalModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'profissionais';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_pro';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nome_pro','foto_pro','telefone_pro'];
 
     // Dates
     protected $useTimestamps = false;

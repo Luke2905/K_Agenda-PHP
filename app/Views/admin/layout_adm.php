@@ -28,6 +28,7 @@
         <li><a href="/Home/funcionario">Profissional</a></li>
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
+        <li><a href="/Home/index">Sair</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
          <span class="left"></span>
             <i class="valign-wrapper">
