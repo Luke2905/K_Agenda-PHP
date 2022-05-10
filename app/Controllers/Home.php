@@ -22,7 +22,7 @@ class Home extends BaseController
 
     public function agendamento()
     {
-        //formulario quebrou irei refazer
+        echo view('agendamento');
     }
 
     public function localizacao()
