@@ -59,7 +59,7 @@ $min = $mindate."T".$mintime;
       </div>
     </div>
 
-    <input type="submit" value="Send Request">
+    <input type="submit" value="Agendar">
   </form>
 </div>
 
