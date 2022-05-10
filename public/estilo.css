@@ -997,9 +997,10 @@ input[type=number] {
     top: -7px;
   }
 
-}
-
-@media screen and (max-width: 650px) {
+  .col-half {
+    width: 100%;
+    padding-right: 0;
+  }
 
 }
 
