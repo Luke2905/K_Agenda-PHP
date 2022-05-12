@@ -25,7 +25,7 @@
       </button>
       <ul id="menu" role="menu">
         <li><a href="/Home/galeria">Galeria</a></li>
-        <li><a href="/Home/funcionario">Profissional</a></li>
+        <li><a href="/Admin/formPro">Profissional</a></li>
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
         <li><a href="/Home/index">Sair</a></li>
@@ -42,6 +42,7 @@
   <script src="css/script.js"></script>
 
   <?php echo $this->renderSection("home");?>
+  <?php echo $this->renderSection("Cadastro");?>
 
 <footer class="footer1">
   <div class="center">

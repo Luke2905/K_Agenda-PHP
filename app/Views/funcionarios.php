@@ -10,7 +10,7 @@ foreach($profissionais as $row){
 
     echo "<div class='card'>";
     echo "<div class='CardImagem'>";
-    echo "<img  src=".$row['foto_pro']."alt=''>";
+    echo "<img  src='".$row['foto_pro']."'alt=''>";
     echo "</div>";
     echo "<h3>".$row['nome_pro']."</h3>";
     echo "<h4>".$row['telefone_pro']."</h4>";
