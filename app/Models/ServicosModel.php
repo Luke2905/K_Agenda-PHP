@@ -14,7 +14,7 @@ class ServicosModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['id_serv','nome-serv','preco_serv','foto_serv'];
 
     // Dates
     protected $useTimestamps = false;

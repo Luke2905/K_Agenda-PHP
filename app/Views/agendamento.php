@@ -16,7 +16,7 @@ $min = $mindate."T".$mintime;
         <input type="text" placeholder="Nome Completo"/>
       </div>
       <div class="input-group input-group-icon">
-        <input type="email" placeholder="Telefone"/>
+        <input type="email" placeholder="email"/>
       </div>
     </div>
     <div class="row">
