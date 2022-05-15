@@ -29,6 +29,8 @@
     </div>
 
   <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+</form><br>
+
+<a style="color:black;" href="/Profissional/delPro">Deletar Profissional</a>
 
 <?php $this->endSection(); ?>
