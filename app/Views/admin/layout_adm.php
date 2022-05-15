@@ -43,6 +43,7 @@
 
   <?php echo $this->renderSection("home");?>
   <?php echo $this->renderSection("Cadastro");?>
+  <?php echo $this->renderSection("Deletar");?>
 
 <footer class="footer1">
   <div class="center">
