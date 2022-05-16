@@ -153,8 +153,13 @@ a:hover {
   text-align: center;
 }
 
-.footer_p {
-  background-color: white;
+.footer1 .footer_p {
+  background-color: #212121;
+  color: white;
+}
+
+.footer2 .footer_p {
+  background-color: #323232;
   color: white;
 }
 
@@ -652,10 +657,12 @@ select {
 input[type="radio"] + label:first-of-type {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  margin: 0 0 0.5em 0;
 }
 input[type="radio"] + label:last-of-type {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+  margin: 0.5em 0 0.5em 0;
 }
 input[type="radio"] + label i {
   padding-right: 0.4em;
@@ -738,7 +745,7 @@ select option {
   margin-bottom: 40px;
   background-color: var(--box-bg);
   border-radius: 4.2px;
-  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 11px 14px rgba(0, 0, 0, 0.2);
 }
 .row {
   zoom: 1;
