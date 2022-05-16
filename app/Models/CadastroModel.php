@@ -14,7 +14,7 @@ class CadastroModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['id','nome','Rua','Bairro','Cep','cidade','uf','celular'];
 
     // Dates
     protected $useTimestamps = false;
