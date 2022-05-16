@@ -21,6 +21,11 @@ class Profissional extends BaseController
         }
     }
 
+    public function cadPro(){
+        echo view('/admin/cad_pro');
+
+    }
+
     public function cadProfissional(){
 
         $model = model('ProfissionalModel');
