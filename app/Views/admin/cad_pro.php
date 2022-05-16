@@ -3,6 +3,7 @@
 
 <?php $this->section("Cadastro");?>
 
+<h1 class="titulo" >Cadastro de Profissional</h1>
 <form action="/Profissional/cadProfissional" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -31,6 +32,6 @@
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form><br>
 
-<a style="color:black;" href="/Profissional/delPro">Deletar Profissional</a>
+<a style="color:black;" href="/Admin/menuPro">Voltar</a>
 
 <?php $this->endSection(); ?>

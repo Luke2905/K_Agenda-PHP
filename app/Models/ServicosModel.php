@@ -8,7 +8,7 @@ class ServicosModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'servicos';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_serv';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';

@@ -2,6 +2,8 @@
 
 <?php $this->section("Deletar");?>
 
+<h1 class="titulo" >Deletar Profissional</h1>
+
 <form action="/Profissional/delProfissional" method="post">
 
 <select class="form-select" aria-label="Default select example" name="id">
@@ -12,6 +14,8 @@
 ?>
 </select>
   <button type="submit" class="btn btn-primary">Deletar</button>
-</form>
+</form><br>
+
+<a style="color:black;" href="/Admin/menuPro">Voltar</a>
 
 <?php $this->endSection(); ?>
