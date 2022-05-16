@@ -35,9 +35,13 @@ class Admin extends BaseController
     }
 
     }
-    public function formPro()
+    public function menuPro()
     {
-        echo view('admin/cad_pro');
+        echo view('admin/menu_pro');
+    }
+    public function menuServ()
+    {
+        echo view('admin/menu_serv');
     }
 
 }
