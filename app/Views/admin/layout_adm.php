@@ -9,23 +9,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/estilo.css" />
+  <link id="estilo" class="dia" rel="stylesheet" href="/estilo.css" />
   <link rel="stylesheet" href="/flickity.css">
-  <script src="css/flickity.pkgd.js"></script>
+  <script src="/flickity.pkgd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <title>King.Agendamentos</title>
 </head>
 
 <body>
 <header id="header">
-    <a id="logo" href="">Kings Agendamento</a>
+    <a id="logo" href="/Admin/adminHome">Kings Agendamento</a>
     <nav id="nav">
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
         <span id="hamburger"></span>
       </button>
       <ul id="menu" role="menu">
-        <li><a href="/Home/galeria">Galeria</a></li>
-        <li><a href="/Admin/formPro">Profissional</a></li>
+        <li><a href="/Admin/menuServ">Galeria</a></li>
+        <li><a href="/Admin/menuPro">Profissional</a></li>
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
         <li><a href="/Home/index">Sair</a></li>
@@ -39,12 +39,19 @@
       </ul>
     </nav>
   </header>
-  <script src="css/script.js"></script>
+  <script src="/script.js"></script>
 
   <?php echo $this->renderSection("home");?>
+  <?php echo $this->renderSection("Menu_Pro");?>
   <?php echo $this->renderSection("Cadastro");?>
   <?php echo $this->renderSection("Deletar");?>
+  <?php echo $this->renderSection("Menu_Serv");?>
+  <?php echo $this->renderSection("Profissionais");?>
+  <?php echo $this->renderSection("Cadastro_Servico");?>
+  <?php echo $this->renderSection("Servicos");?>
+  <?php echo $this->renderSection("Deletar_Servico");?>
 
+</body>
 <footer class="footer1">
   <div class="center">
     <div class="w501">
@@ -66,5 +73,4 @@
     Jefferson
   </p>
 </footer>
-</body>
 </html>
