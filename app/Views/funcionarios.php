@@ -24,30 +24,3 @@ foreach($profissionais as $row){
 </div>
 
 <?php $this->endSection(); ?>
-
-<?php $this->extend("admin/layout_adm");?>
-
-<?php $this->section("Profissionais");?>
-
-<div class="container_func">
-    
-<?php 
-
-foreach($profissionais as $row){
-
-    echo "<div class='card'>";
-    echo "<div class='CardImagem'>";
-    echo "<img  src='".$row['foto_pro']."'alt=''>";
-    echo "</div>";
-    echo "<h3>".$row['nome_pro']."</h3>";
-    echo "<h4>".$row['telefone_pro']."</h4>";
-    echo "<a href=''>Agendar</a>";
-    echo "</div>";
-
-
-}
-
-?>
-</div>
-<a style="color:black;" href="/Admin/menuPro">Voltar</a>
-<?php $this->endSection(); ?>
