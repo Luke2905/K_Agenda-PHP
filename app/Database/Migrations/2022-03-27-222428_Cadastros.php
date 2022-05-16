@@ -21,11 +21,21 @@ class Cadastros extends Migration
                   'constraint' =>100,
                   'null' => false,
               ],
-              'endereco' =>[
+              'Rua' =>[
                   'type' => 'VARCHAR',
                   'constraint' => 50,
                   'null' => false,
               ],
+              'Bairro' =>[
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+                'null' => false,
+            ],
+            'Cep' =>[
+                'type' => 'INT',
+                'constraint' => 8,
+                'null' => false,
+            ],
               'cidade' =>[
                   'type' => 'VARCHAR',
                   'constraint'=>35,
@@ -36,7 +46,7 @@ class Cadastros extends Migration
                   'constraint' =>2,
                   'null' => false,
               ],
-              'telefone' =>[
+              'celular' =>[
                   'type' => 'INT',
                   'constraint' =>11,
                   'null' => false,
