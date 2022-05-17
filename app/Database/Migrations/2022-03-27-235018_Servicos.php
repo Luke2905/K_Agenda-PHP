@@ -23,7 +23,7 @@ class Servicos extends Migration
                 ],
                 'preco_serv' =>[
                     'type' => 'DECIMAL',
-                    'constraint' => 10.2,
+                    'constraint' => 6.2,
                     'null' => false,
                 ],
                 'foto_serv' =>[
