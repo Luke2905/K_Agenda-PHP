@@ -47,8 +47,8 @@ class Cadastros extends Migration
                   'null' => false,
               ],
               'celular' =>[
-                  'type' => 'INT',
-                  'constraint' =>11,
+                  'type' => 'BIGINT',
+                  'constraint' => 11,
                   'null' => false,
               ],
           ]
