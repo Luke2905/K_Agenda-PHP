@@ -22,7 +22,7 @@ class Profissionais extends Migration
                     'null' => false,
                 ],
                 'telefone_pro' =>[
-                    'type' => 'INT',
+                    'type' => 'BIGINT',
                     'constraint' =>11,
                     'null' => false,
                 ],
