@@ -62,4 +62,30 @@ class Profissional extends BaseController
         return view('/admin/del_pro',$dados);
 
     }
+
+    public function selectPro(){
+        $dados['profissionais'] = $this->profissionalmodel->findAll();
+        echo view('/admin/alt_pro_select',$dados);
+    }
+
+    public function altPro(){
+        $dados = $this->request->getPost();
+        $dados['profissionais'] = $this->profissionalmodel->find($dados['id']);
+
+        echo view('/admin/alt_pro',$dados);
+    }
+
+    public function altProfissional(){
+
+        $model = model('ProfissionalModel');
+        $dados = $this->request->getPost();
+        $pro = $model ->db->query("update profissionais set nome_pro='$dados[nome]',foto_pro='$dados[url]',telefone_pro='$dados[telefone]' where id_pro ='$dados[id]'");
+       // dd($dados);
+       if($pro){
+        echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";
+        echo "<a href='/Admin/menuPro'>Voltar</a><br>";
+}else {
+    echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
+}
+    }
 }
