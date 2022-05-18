@@ -10,7 +10,7 @@
     <a href="/Profissional/delPro" class="btn btn-warning active" aria-current="page">Deletar</a>
     </div>
     <div id="item3" class="btn-group">
-    <a href="#" class="btn btn-dark active" aria-current="page">Alterar</a>
+    <a href="/Profissional/selectPro" class="btn btn-dark active" aria-current="page">Alterar</a>
     </div>
     <div id="item4" class="btn-group">
     <a href="/Profissional/index" class="btn btn-warning active" aria-current="page">Ver</a>
