@@ -8,7 +8,7 @@
 
 <div class="select_pro">
 <form action="/Profissional/altPro" method="post">
-<select class="form-select bg-light text-dark" size="5" aria-label="size 5 select example" name="id">
+<select id="sel_pro"class="form-select bg-light text-dark" size="5" aria-label="size 5 select example" name="id">
   <?php foreach($profissionais as $row){
 
 echo "<option  class='p-3 mb-2 bg-light text-dark' value='".$row['id_pro']."'>".$row['nome_pro']."</option>";

@@ -1096,7 +1096,7 @@ input[type=number] {
   height: 600px;
 }
 
-.form-select{
+#sel_pro{
   margin: 10px; 
   height: 500px;
 }
