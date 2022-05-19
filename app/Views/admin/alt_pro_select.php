@@ -2,20 +2,22 @@
 
 <?php $this->section("Selecionar_Pro");?>
 
-<h1 class="titulo" >Selecionar Profissional</h1>
+<a style="margin:10px;" class="btn btn-warning" href="/Admin/menuPro" role="button">Voltar</a>
 
+<h1 class="titulo" >Selecionar Profissional</h1><br>
+
+<div class="select_pro">
 <form action="/Profissional/altPro" method="post">
+<select class="form-select bg-light text-dark" size="5" aria-label="size 5 select example" name="id">
+  <?php foreach($profissionais as $row){
 
-<select class="form-select" aria-label="Default select example" name="id">
-<?php foreach($profissionais as $row){
-
-    echo "<option value='".$row['id_pro']."'>".$row['nome_pro']."</option>";
+echo "<option  class='p-3 mb-2 bg-light text-dark' value='".$row['id_pro']."'>".$row['nome_pro']."</option>";
 }
 ?>
 </select>
   <button type="submit" class="btn btn-primary">Alterar</button>
 </form><br>
 
-<a style="color:black;" href="/Admin/menuPro">Voltar</a>
+</div>
 
 <?php $this->endSection(); ?>

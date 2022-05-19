@@ -1045,7 +1045,7 @@ input[type=number] {
   display: block;
 }
 
-/*  Menu Serviços */
+/*  Menus */
 
 .menu_adm{
   width: 500px;
@@ -1087,3 +1087,18 @@ input[type=number] {
   text-align: center;
   margin: 10px;
 }
+
+/*  Fim Menus */
+
+/*  Tela de Selecionar Pro */
+.select_pro{
+  width: 1475px;
+  height: 600px;
+}
+
+.form-select{
+  margin: 10px; 
+  height: 500px;
+}
+
+/*  Fim Tela de Selecionar Pro */
