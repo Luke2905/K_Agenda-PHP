@@ -31,7 +31,7 @@ class Profissionais extends Migration
                     'constraint' => 2083,
                     'null' => false,
                 ],
-            ]
+             ]
             );
             $this->forge->addKey('id_pro', true);
             $this->forge->createTable('profissionais');
