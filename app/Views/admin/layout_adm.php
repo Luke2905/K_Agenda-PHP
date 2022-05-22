@@ -52,6 +52,8 @@
   <?php echo $this->renderSection("Cadastro_Servico");?>
   <?php echo $this->renderSection("Servicos");?>
   <?php echo $this->renderSection("Deletar_Servico");?>
+  <?php echo $this->renderSection("Alterar_Servico");?>
+  <?php echo $this->renderSection("Selecionar_Serv");?>
 
 </body>
 <footer class="footer1">
