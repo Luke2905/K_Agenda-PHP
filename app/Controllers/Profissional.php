@@ -70,9 +70,13 @@ class Profissional extends BaseController
 
     public function altPro(){
         $dados = $this->request->getPost();
-        $dados['profissionais'] = $this->profissionalmodel->find($dados['id']);
-
-        echo view('/admin/alt_pro',$dados);
+        if(empty($dados)){
+            echo view('/errors/erro_select');
+            header("Refresh:1; url=/Profissional/selectPro");
+        }else{
+            $dados['profissionais'] = $this->profissionalmodel->find($dados['id']);
+            echo view('/admin/alt_pro',$dados);
+        }
     }
 
     public function altProfissional(){
