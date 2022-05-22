@@ -63,4 +63,33 @@ class Servico extends BaseController
     }
 
    }
+
+   public function selectServ(){
+    $dados['servicos'] = $this->servicomodel->findAll();
+    echo view('/admin/alt_serv_select',$dados);
+    }
+
+   public function altServ(){
+    $dados = $this->request->getPost();
+        if(empty($dados)){
+             echo view('/errors/erro_select');
+            header("Refresh:1; url=/Servico/selectServ");
+        }else{
+             $dados['servicos'] = $this->servicomodel->find($dados['id']);
+             echo view('/admin/alt_serv',$dados);
+            }
+    }
+    public function altServico(){
+
+    $model = model('ServicosModel');
+    $dados = $this->request->getPost();
+    $pro = $model ->db->query("update servicos set nome_serv='$dados[nome]',foto_serv='$dados[url]',preco_serv='$dados[Preco]' where id_serv ='$dados[id]'");
+   // dd($dados);
+        if($pro){
+             echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";
+             echo "<a href='/Admin/menuServ'>Voltar</a><br>";
+         }else {
+            echo "<span class='help-block' style='color: Red;'>Não foi Possivel Alterar o Serviço!</span>";
+        }
+    }
 }

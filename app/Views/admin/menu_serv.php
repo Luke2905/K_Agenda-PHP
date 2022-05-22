@@ -10,7 +10,7 @@
     <a href="/Servico/delServ" class="btn btn-dark active" aria-current="page">Deletar</a>
     </div>
     <div id="item3" class="btn-group">
-    <a href="#" class="btn btn-warning active" aria-current="page">Alterar</a>
+    <a href="/Servico/selectServ" class="btn btn-warning active" aria-current="page">Alterar</a>
     </div>
     <div id="item4" class="btn-group">
     <a href="/Servico/index" class="btn btn-dark active" aria-current="page">Ver</a>
