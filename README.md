@@ -1,6 +1,6 @@
 <p align="center">
+<img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=brightgreen&style=for-the-badge"/>
 <img src="https://img.shields.io/github/issues/Luke2905/K_Agenda-PHP?color=DC143D&style=for-the-badge"/>
-<img src="https://img.shields.io/github/issues/Luke2905/K_Agenda-PHP?style=for-the-badge"/>
 <img src="https://img.shields.io/github/stars/Luke2905/K_Agenda-PHP?color=yellow&style=for-the-badge"/>
 <img src="https://img.shields.io/github/license/Luke2905/K_Agenda-PHP?color=ff69b4&style=for-the-badge"/></p>
 
@@ -16,11 +16,11 @@ O grupo de contruibuintes se comporta como uma startup, onde se tem como lema: "
 
 - [Codeigniter 4](https://codeigniter.com/download)
 - [Composer](https://getcomposer.org/download/) 
-- [XAMPP~](https://www.apachefriends.org/pt_br/download.html)
+- [XAMPP](https://www.apachefriends.org/pt_br/download.html)
 
 <h1 align="center">🔁 Como rodar o projeto</h1>
 
-<h2>1. XAMPP**</h2>
+**1. XAMPP**
 - Após todas as configurações padrões de download, abra o servidor XAMPP;
 - Clique no botão `"Config"` do Apache;
 - Clique na opção `"PHP (php.ini)"`; <img src="https://imag.malavida.com/mvimgbig/download-fs/xampp-6688-3.jpg" alt="exemplo">
@@ -29,7 +29,7 @@ O grupo de contruibuintes se comporta como uma startup, onde se tem como lema: "
 - Reinicie o XAMPP;
 - Ligue o Apache e MySQL;
 
-<h2>2. Acessar o projeto na máquina</h2>
+**2. Acessar o projeto na máquina**
 - Abra um prompt de comando;
 - Navegue até a pasta raiz do projeto `K_Agenda-PHP`;
 - Utilize a seguinte lista de comandos:
