@@ -6,21 +6,21 @@
 
 <h1 align="center">👑 King Agendamentos</h1>
 
-- O King Agendamentos, ou K_Agenda, é um website voltado para a coordenação de tempo prévio, que atende principalmente o público de salão de beleza e/ou barbearia, visando simplificar e melhorar o gerenciamento do processo já feito manualmente. Nosso "cliente", pede que o projeto atenda suas devidas necessidades de forma detalhada e eficaz como: Cortes e Adicionais, Galeria, Lista de Profissionais Disponíveis, Localização das Filiais, Login/Cadastramento e muito mais, além de obter design atraente e intuitivo tanto para seus funcionários quanto para seus usuários tenham uma ótima experiência.
+O King Agendamentos, ou K_Agenda, é um website voltado para a coordenação de tempo prévio, que atende principalmente o público de salão de beleza e/ou barbearia, visando simplificar e melhorar o gerenciamento do processo já feito manualmente. Nosso "cliente", pede que o projeto atenda suas devidas necessidades de forma detalhada e eficaz como: Cortes e Adicionais, Galeria, Lista de Profissionais Disponíveis, Localização das Filiais, Login/Cadastramento e muito mais, além de obter design atraente e intuitivo tanto para seus funcionários quanto para seus usuários tenham uma ótima experiência.
 
-# 📍 Projeto
+<h1 align="center">📍 Projeto</h1>
 
 O grupo de contruibuintes se comporta como uma startup, onde se tem como lema: "**Inovação**, **Escalabilidade** e **Flexibilidade**". 
 
-# 🛠 Ferramentas necessárias para executar o projeto
+<h1 align="center">🛠 Ferramentas necessárias para executar o projeto</h1>
 
 - [Codeigniter 4](https://codeigniter.com/download)
 - [Composer](https://getcomposer.org/download/) 
 - [XAMPP~](https://www.apachefriends.org/pt_br/download.html)
 
-# 🔁 Como rodar o projeto
+<h1 align="center">🔁 Como rodar o projeto</h1>
 
-**1. XAMPP**
+<h2>1. XAMPP**</h2>
 - Após todas as configurações padrões de download, abra o servidor XAMPP;
 - Clique no botão `"Config"` do Apache;
 - Clique na opção `"PHP (php.ini)"`; <img src="https://imag.malavida.com/mvimgbig/download-fs/xampp-6688-3.jpg" alt="exemplo">
@@ -28,7 +28,8 @@ O grupo de contruibuintes se comporta como uma startup, onde se tem como lema: "
 - Salve o arquivo `php.ini`;
 - Reinicie o XAMPP;
 - Ligue o Apache e MySQL;
-**2. Acessar o projeto na máquina**
+
+<h2>2. Acessar o projeto na máquina</h2>
 - Abra um prompt de comando;
 - Navegue até a pasta raiz do projeto `K_Agenda-PHP`;
 - Utilize a seguinte lista de comandos:
