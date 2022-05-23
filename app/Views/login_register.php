@@ -7,7 +7,7 @@
         <img src="/img/icon_preto.png" alt="">
     </div>
     <div class="login_form">
-        <form action="">
+        <form action="/Home/autenticar" method="post">
             <div class="login_header">
                 <div class="titulo_login">
                     <h1>Login</h1>
@@ -20,11 +20,11 @@
             <div class="input_grupo">
                 <div class="input_box">
                     <label for="">Digite seu email</label>
-                    <input type="email" required>
+                    <input type="email" name="usuario" required>
                 </div>
                 <div class="input_box">
                     <label for="">Digite sua senha</label>
-                    <input type="password" required>
+                    <input type="password" name="senha" required>
                 </div>
             </div>
 
