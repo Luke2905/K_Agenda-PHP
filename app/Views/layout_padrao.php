@@ -45,6 +45,8 @@
   <?php echo $this->renderSection("funcionarios");?>
   <?php echo $this->renderSection("agendamento");?>
   <?php echo $this->renderSection("localizacao");?>
+  <?php echo $this->renderSection("register_login");?>
+  <?php echo $this->renderSection("login_register");?>
   <?php echo $this->renderSection("mapa");?>
 
 </body>

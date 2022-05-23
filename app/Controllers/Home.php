@@ -37,7 +37,12 @@ class Home extends BaseController
 
     public function login()
     {
-        echo view('login');
+        echo view('login_register');
+    }
+
+    public function register()
+    {
+        echo view('register_login');
     }
 
     public function autenticar()
