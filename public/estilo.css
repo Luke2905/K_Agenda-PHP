@@ -17,6 +17,9 @@
   /*localizacao*/
   --localizacao-bg: url(/img/Wallpaper_Branco.png);
   --localizacao-rgba: rgba(130, 130, 130, 0.5);
+
+  /*login*/
+  --login-bg: url(/img/login_branco.png);
 }
 
 .dark-mode:root {
@@ -36,9 +39,12 @@
   --comentarios-color: grey;
   --border-img-comentarios: darkgray;
 
-    /*localizacao*/
-    --localizacao-bg: url(/img/Wallpaper_Preto.png);
-    --localizacao-rgba: rgba(0, 0, 0, 0.6);
+  /*localizacao*/
+  --localizacao-bg: url(/img/Wallpaper_Preto.png);
+  --localizacao-rgba: rgba(0, 0, 0, 0.6);
+
+  /*login*/
+  --login-bg: url(/img/login_preto.png);
 }
 
 
@@ -791,20 +797,24 @@ input[type=number] {
   width: 80%;
   height: 80vh;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  box-shadow: 4px 4px 20px 15px rgb(0 0 0 / 21%);
   margin: 40px;
   margin-left: 10%;
+  color: var(--text-color);
+  border-radius: 20px;
 }
 
 .login_img {
+  content: var(--parallax-logo);
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  background-image: url(/img/login_branco.png);
+  background-image: var(--login-bg);
   background-size: cover;
   padding: 1rem;
+  border-radius: 20px 0 0 20px;
 }
 
 .login_img img {
@@ -817,12 +827,13 @@ input[type=number] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--box-bg);
   padding: 3rem;
+  border-radius: 0 20px 20px 0;
 }
 
 .login_header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -891,9 +902,10 @@ input[type=number] {
 }
 
 .input_box label{
+  margin-bottom: 5px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #000000c0;
+  color: var(--text-color);
 }
 
 .input_box input::placeholder {
@@ -902,7 +914,7 @@ input[type=number] {
 
 .registrar button {
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   border: none;
   background-color: #6c63ff;
   padding: 0.62rem;
