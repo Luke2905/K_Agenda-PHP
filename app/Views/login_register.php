@@ -4,7 +4,7 @@
 
 <div class="container_login">
     <div class="login_img">
-        <img src="/img/icon_preto.png" alt="">
+        <img alt="">
     </div>
     <div class="login_form">
         <form action="/Home/autenticar" method="post">
