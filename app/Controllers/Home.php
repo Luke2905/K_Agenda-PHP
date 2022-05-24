@@ -7,7 +7,7 @@ class Home extends BaseController
 
     public function index()
     {
-        echo view('PaginaInicial');
+        echo view('pagina_inicial');
     }
 
     public function galeria()
