@@ -10,10 +10,11 @@ class Agendamento extends Migration
     {
         $this->forge->addField(
         [
-            'id_agend'=>[
-                'type' =>'INT',
-                    'constraint' => true,
-                    'auto_inclement' => true,
+            'id_agend' =>[
+                'type' => 'INT',
+                'constraint' =>100,
+                'unsigned'  => true,
+             'auto_increment' => true,
             ],
         ],
         );
