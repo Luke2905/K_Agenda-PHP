@@ -38,6 +38,6 @@ O grupo de contruibuintes se comporta como uma startup, onde se tem como lema: "
 
 # 📌 Autores
 
-| [<img src="https://avatars.githubusercontent.com/u/82630009?v=4" width=115><br><sub>Emanuel Sobral</sub>](https://github.com/emanuelsobral) |  [<img src="https://avatars.githubusercontent.com/u/73266806?v=4" width=115><br><sub>Hisllaylla Kézia</sub>](https://github.com/Hisllaylla) |  [<img src="https://avatars.githubusercontent.com/u/88212940?v=4" width=115><br><sub>Lucas de Barros</sub>](https://github.com/Luke2905) |
-| :---: | :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/u/82630009?v=4" width=115><br><sub>Emanuel Sobral</sub>](https://github.com/emanuelsobral) |  [<img src="https://avatars.githubusercontent.com/u/73266806?v=4" width=115><br><sub>Hisllaylla Kézia</sub>](https://github.com/Hisllaylla) | [<img src="https://avatars.githubusercontent.com/u/88010959?v=4" width=115><br><sub>Kaio Sena</sub>](https://github.com/KaioSena) | [<img src="https://avatars.githubusercontent.com/u/88212940?v=4" width=115><br><sub>Lucas de Barros</sub>](https://github.com/Luke2905) | [<img src="https://avatars.githubusercontent.com/u/83068741?v=4" width=115><br><sub>Wagner Nailson</sub>](https://github.com/SetZeroMD) |
+| :---: | :---: | :---: | :---: | :---: |
 > 💡 Profit.
