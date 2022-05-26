@@ -2,6 +2,16 @@
 
 <?php $this->section("funcionarios");?>
 
+<section class="pesquisa">
+    <div class="center">
+        <form action="" method="">
+            <h2>Busque nossos funcionarios</h2>
+            <input type="text" name="search" placeholder="Insira a pesquisa">
+            <input type="submit" value="Pesquisar">
+        </form>
+    </div>
+</section>
+
 <div class="container_func">
     
 <?php 
