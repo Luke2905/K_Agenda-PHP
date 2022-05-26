@@ -4,10 +4,10 @@
 
 <section class="pesquisa">
     <div class="center">
-        <form action="" method="">
+        <form action="/Profissional/pesquisarPro" method="post">
             <h2>Busque nossos funcionarios</h2>
             <input type="text" name="search" placeholder="Insira a pesquisa">
-            <input type="submit" value="Pesquisar">
+            <input type="submit" value="pesquisar">
         </form>
     </div>
 </section>
