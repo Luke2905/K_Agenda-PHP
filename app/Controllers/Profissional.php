@@ -88,8 +88,20 @@ class Profissional extends BaseController
        if($pro){
         echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";
         echo "<a href='/Admin/menuPro'>Voltar</a><br>";
-}else {
+    }else {
     echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
-}
+    }
+    }
+
+    public function pesquisar($busca){
+
+        //$dados = $this->request->getPost();
+        $dados['pesquisa'] = $busca;
+        $this->profissionalmodel->orLike('nome_pro',$dados['pesquisa']);
+        $this->profissionalmodel->orLike('telefone_pro',$dados['pesquisa']);
+        $dados['profissionais']=  $this->profissionalmodel->findAll();
+         return view('funcionarios',$dados);
+
+
     }
 }
