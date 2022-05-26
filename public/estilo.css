@@ -955,6 +955,7 @@ input[type=number] {
 
 .input_grupo {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem 0;
@@ -1045,7 +1046,7 @@ input[type=number] {
 
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1300px) {
   .login_img {
     display: none;
   }
