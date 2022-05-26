@@ -31,14 +31,22 @@ class Profissionais extends Migration
                     'constraint' => 2083,
                     'null' => false,
                 ],
+                'id_agend' =>[
+                    'type' => 'INT',
+                    'constraint' =>100,
+                    'unsigned'  => true,
+                 'auto_increment' => true,
+                ],
              ]
             );
             $this->forge->addKey('id_pro', true);
             $this->forge->createTable('profissionais');
+            $this->forge->foreignkey('id_agend');
     }
 
     public function down()
     {
         $this->forge->dropTable('profissionais');
+        $this->forge->dropForeignKey('Profissionais','id_agend');
     }
 }
