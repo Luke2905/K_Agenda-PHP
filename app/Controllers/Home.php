@@ -1,9 +1,14 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\ProfissionalModel;
 class Home extends BaseController
 {
+    public $profissionalmodel;
+
+    public function __construct(){
+        $this->profissionalmodel = new ProfissionalModel();
+    }
 
     public function index()
     {
@@ -22,7 +27,8 @@ class Home extends BaseController
 
     public function agendamento()
     {
-        echo view('agendamento');
+        $dados['profissionais'] = $this->profissionalmodel->findAll();
+        echo view('agendamento',$dados);
     }
 
     public function localizacao()
