@@ -9,14 +9,14 @@ $min = $mindate."T".$mintime;
 ?>
 
 <div class="container_agendamento">
-  <form>
+  <form action="/Agendamento/index" method="POST">
     <div class="row">
       <h4>Conta</h4>
       <div class="input-group input-group-icon">
-        <input type="text" placeholder="Nome Completo"/>
+        <input type="text" placeholder="Nome Completo" name="nome"/>
       </div>
       <div class="input-group input-group-icon">
-        <input type="email" placeholder="email"/>
+        <input type="email" placeholder="email" name="email"/>
       </div>
     </div>
     <div class="row">
@@ -36,6 +36,17 @@ $min = $mindate."T".$mintime;
         </div>
       </div>
     </div>
+    <div class="row">
+      <!-- Select de Profissionais -->
+    <select class="form-select bg-light text-dark"  aria-label="Default select example" name="id">
+  <?php foreach($profissionais as $row){
+
+echo "<option  class='p-3 mb-2 bg-light text-dark' value='".$row['id_pro']."'>".$row['nome_pro']."</option>";
+}
+?>
+</select>
+  <!--Fim Select de Profissionais -->
+    </div><br>
     <div class="row">
       <h4>Adicionais</h4>
       <div class="input-group input-group-icon">
