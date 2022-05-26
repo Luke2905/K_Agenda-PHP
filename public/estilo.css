@@ -539,6 +539,52 @@ section.sobre_equipe>.container_sobre {
 
 /*Funcionarios*/
 
+section.pesquisa {
+  text-align: center;
+}
+
+section.pesquisa input[type="submit"]{
+  background: #9C19E0;
+  color: white;
+  padding: 0.5%;
+  text-align: center;
+  display: inline-block;
+  width: 8%;
+  height: 30%;
+  border-bottom: 6px solid #700B97;
+  font-size: 14px;
+  border-radius: 20px;
+  margin: 0;
+}
+
+section.pesquisa input[type="submit"]:hover{
+  background: #700B97;
+  border-bottom: 6px solid #3E065F;
+}
+
+section.pesquisa h2{
+  font-weight: normal;
+  margin: 2%;
+  color: white;
+}
+
+section.pesquisa form{
+  padding-left: 2%;
+}
+
+section.pesquisa h2 {
+  color: var(--text-color);
+}
+
+section.pesquisa input{
+  padding: 0.5%;
+  width: 30%;
+  height: 25px;
+  border-radius: 20px;
+  margin: 0;
+}
+
+
 .container_func {
   width: 100%;
   min-height: calc(100vh - 70px);
@@ -999,6 +1045,29 @@ input[type=number] {
 
 }
 
+@media screen and (max-width: 1330px) {
+  .login_img {
+    display: none;
+  }
+  .container_login {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .login_form {
+    width: 100%;
+  }
+
+  .input_grupo{
+    width: 50%; 
+  }
+}
+
+@media screen and (max-width: 1064px) {
+
+}
+
 @media screen and (min-width:900px){  
   .comentarios{
     padding: 15%;
@@ -1107,7 +1176,7 @@ input[type=number] {
   .w50{
     width: 100%;
   }
-
+  
   /*Menu mobile*/
 
   #header {
