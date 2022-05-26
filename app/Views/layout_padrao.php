@@ -17,12 +17,6 @@
 <!--Header-->
 <body>
 
-<label for="modo-escuro">
-    <a class="button">Modo dark</a>
-</label>
-<input type="checkbox" id="modo-escuro">
-<script src="/estilo.js"></script>
-
 <header id="header">
     <a id="logo" href="/Home/index"><img src="/img/logo_branco.png" alt=""></a>
     <nav id="nav">
@@ -35,6 +29,13 @@
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localizacão</a></li>
         <li><a href="/Home/login">Login</a></li>
+        
+        <label for="modo-escuro">
+            <button class="checkbox_dark" role="switch" id="checkbox_dark"></button>
+            <input type="checkbox" id="modo-escuro">
+        </label>
+
+        <script src="/estilo.js"></script>
       </ul>
     </nav>
   </header>

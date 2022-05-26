@@ -78,6 +78,41 @@ h1,h2{
 
 /*Menu*/
 
+.checkbox_dark{
+  width: 52px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  background-color: #49454f;
+  border-radius: 24px;
+  border: solid 2px #938f99;
+  transition: border-color 200ms, background-color 200ms;
+  cursor: pointer;
+}
+
+.checkbox_dark::before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 12px;
+  background-color: #938f99;
+  transition: width 200ms, height 200ms, transform 200ms, background-color 200ms;
+}
+
+.checkbox_dark.on {
+  border-color: #d0bcff;
+  background-color: #d0bcff;
+}
+
+.checkbox_dark.on::before{
+  background-color: #381e72;
+  width: 24px;
+  height: 24px;
+  transform: translateX(18px);
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -1104,6 +1139,11 @@ input[type=number] {
     text-decoration: underline;
     font-weight: bold;
     transition: 0.2s;
+  }
+
+  #menu button{
+    margin: auto;
+    margin-top: 10px;
   }
 
   #menu a {
