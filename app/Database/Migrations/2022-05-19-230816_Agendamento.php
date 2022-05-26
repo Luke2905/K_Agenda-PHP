@@ -21,6 +21,9 @@ class Agendamento extends Migration
                 'constraint' =>100,
                 'null' => false,
             ],
+            'id_pro' =>[
+
+            ],
             'email_agend' =>[
                 'type' => 'VARCHAR',
                 'constraint' => 100,
