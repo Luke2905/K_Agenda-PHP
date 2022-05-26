@@ -24,11 +24,11 @@
                 </div>
                 <div class="input_box">
                     <label for="">Digite uma senha</label>
-                    <input type="password" required>
+                    <input type="password" id="password" required>
                 </div>
                 <div class="input_box">
                     <label for="">Repita a senha</label>
-                    <input type="password" required>
+                    <input type="password" id="confirm_password" required>
                 </div>
                 <div class="input_box">
                     <label for="">Digite seu email</label>
@@ -47,5 +47,7 @@
         </form>
     </div>
 </div>
+
+<script src="/checar_senha.js"></script>
 
 <?php $this->endSection(); ?>
