@@ -20,6 +20,12 @@
 
   /*login*/
   --login-bg: url(/img/login_branco.png);
+
+  /*Buttons*/
+  --ball-button: #764AF1;
+  --button-bg: #9772FB;
+  --border-button : #A85CF9;
+  --button-hover : #8A39E1;
 }
 
 .dark-mode:root {
@@ -45,6 +51,12 @@
 
   /*login*/
   --login-bg: url(/img/login_preto.png);
+
+  /*Buttons*/
+  --ball-button: #5534A5;
+  --button-bg: #A85CF9;
+  --border-button : #5534A5;
+  --button-hover : #612897;
 }
 
 
@@ -84,9 +96,9 @@ h1,h2{
   padding: 4px;
   display: flex;
   align-items: center;
-  background-color: #49454f;
+  background-color: var(--button-bg);
   border-radius: 24px;
-  border: solid 2px #938f99;
+  border: solid 2px var(--border-button);
   transition: border-color 200ms, background-color 200ms;
   cursor: pointer;
 }
@@ -97,17 +109,17 @@ h1,h2{
   width: 16px;
   height: 16px;
   border-radius: 12px;
-  background-color: #938f99;
+  background-color: var(--ball-button);
   transition: width 200ms, height 200ms, transform 200ms, background-color 200ms;
 }
 
 .checkbox_dark.on {
-  border-color: #d0bcff;
-  background-color: #d0bcff;
+  border-color: var(--border-button);
+  background-color: var(--button-bg);
 }
 
 .checkbox_dark.on::before{
-  background-color: #381e72;
+  background-color: var(--ball-button);
   width: 24px;
   height: 24px;
   transform: translateX(18px);
@@ -246,7 +258,6 @@ section.parallax::after {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 section.parallax .logo {
@@ -544,22 +555,20 @@ section.pesquisa {
 }
 
 section.pesquisa input[type="submit"]{
-  background: #9C19E0;
+  background: var(--button-bg);
   color: white;
   padding: 0.5%;
   text-align: center;
   display: inline-block;
   width: 8%;
   height: 30%;
-  border-bottom: 6px solid #700B97;
   font-size: 14px;
   border-radius: 20px;
   margin: 0;
 }
 
 section.pesquisa input[type="submit"]:hover{
-  background: #700B97;
-  border-bottom: 6px solid #3E065F;
+  background: var(--button-hover);
 }
 
 section.pesquisa h2{
@@ -641,19 +650,17 @@ section.pesquisa input{
 
 .container_func .card a {
   margin: 18px;
-  background: #9C19E0;
+  background: var(--button-bg);
   color: white;
   padding: 8px 6px;
   text-align: center;
   display: inline-block;
-  border-bottom: 6px solid #700B97;
   font-size: 16px;
   border-radius: 30px;
 }
 
 .container_func .card a:hover {
-  background: #700B97;
-  border-bottom: 6px solid #3E065F;
+  background: var(--button-hover);
 }
 
 .CardImagem {
@@ -727,7 +734,7 @@ select {
 }
 input:focus {
   outline: 0;
-  border-color: #bd8200;
+  border-color: var(--button-bg);
 }
 
 input[type="radio"] {
@@ -758,9 +765,9 @@ input[type="radio"]:checked + label,
 input:checked + label:before,
 select:focus,
 select:active {
-  background-color: #f0a500;
+  background-color: var(--button-bg);
   color: #fff;
-  border-color: #bd8200;
+  border-color: var(--button-bg);
 }
 input[type="checkbox"] {
   display: none;
@@ -808,7 +815,7 @@ select:active {
   outline: 0;
 }
 select option {
-  background-color: #f0a500;
+  background-color: var(--button-bg);
   color: #fff;
 }
 .input-group {
@@ -926,14 +933,14 @@ input[type=number] {
 
 .login_button button {
   border: none;
-  background-color: #6c63ff;
+  background-color: var(--button-bg);
   padding: 0.4rem 1rem;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .login_button button:hover {
-  background-color: #6b63fff1;
+  background-color: var(--button-hover);
 }
 
 .login_button button a {
@@ -947,7 +954,7 @@ input[type=number] {
   display: block;
   width: 5rem;
   height: 0.3rem;
-  background-color: #6c63ff;
+  background-color: var(--button-bg);
   margin: 0 auto;
   position: absolute;
   border-radius: 10px;
@@ -980,7 +987,7 @@ input[type=number] {
 }
 
 .input_box input:focus-visible {
-  outline: 1px solid #6c63ff;
+  outline: 1px solid var(--button-bg);
 }
 
 .input_box label{
@@ -998,14 +1005,15 @@ input[type=number] {
   width: 100%;
   margin-top: 2rem;
   border: none;
-  background-color: #6c63ff;
+  background-color: var(--button-bg);
   padding: 0.62rem;
   border-radius: 5px;
+  color: white;
   cursor: pointer;
 }
 
 .registrar button:hover {
-  background-color: #6b63fff1;
+  background-color: var(--button-hover);
 }
 
 .registrar button a {
