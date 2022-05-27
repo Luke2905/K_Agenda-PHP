@@ -520,6 +520,7 @@ section.sobre_equipe>.container_sobre {
   background-color: var(--box-bg);
   box-shadow: 0 2px 2px black;
   padding: 2%;
+  padding-bottom: 6%;
   margin: 15px;
 }
 
