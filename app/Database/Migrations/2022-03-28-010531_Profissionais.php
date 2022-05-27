@@ -41,12 +41,12 @@ class Profissionais extends Migration
             );
             $this->forge->addKey('id_pro', true);
             $this->forge->createTable('profissionais');
-            $this->forge->foreignkey('id_agend');
+            /*$this->forge->foreignkey('id_agend');*/
     }
 
     public function down()
     {
         $this->forge->dropTable('profissionais');
-        $this->forge->dropForeignKey('Profissionais','id_agend');
+        /*$this->forge->dropForeignKey('Profissionais','id_agend');*/
     }
 }
