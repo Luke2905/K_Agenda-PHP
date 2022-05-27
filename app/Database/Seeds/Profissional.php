@@ -9,7 +9,7 @@ class Profissional extends Seeder
     public function run()
     {
         $data = [
-
+        [
             'nome_pro'=>'Alberto',
             'foto_pro'=>'https://img.ibxk.com.br/2019/02/17/17124052466014.jpg',
             'telefone_pro'=>'999703020'
@@ -53,9 +53,9 @@ class Profissional extends Seeder
             'nome_pro'=>'Antonieta',
             'foto_pro'=>'https://fotografiadicas.com.br/wp-content/uploads/2017/10/15-Como-fotografar-pessoas-Fotografia-Dicas.jpg',
             'telefone_pro'=>'997035342'
-        ]);
-        
-        $this-&gt;db-&gt;table('Profissionais')-&gt;insertBatch($data);
+        ],
+    ];
+        $this->db->table('Profissionais')->insertBatch($data);
 
     }
 }
