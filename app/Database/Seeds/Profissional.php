@@ -8,8 +8,7 @@ class Profissional extends Seeder
 {
     public function run()
     {
-        $model = model('ProfissionalModel');
-        $model -> insert([
+        $data = [
 
             'nome_pro'=>'Alberto',
             'foto_pro'=>'https://img.ibxk.com.br/2019/02/17/17124052466014.jpg',
@@ -55,6 +54,8 @@ class Profissional extends Seeder
             'foto_pro'=>'https://fotografiadicas.com.br/wp-content/uploads/2017/10/15-Como-fotografar-pessoas-Fotografia-Dicas.jpg',
             'telefone_pro'=>'997035342'
         ]);
+        
+        $this-&gt;db-&gt;table('Profissionais')-&gt;insertBatch($data);
 
     }
 }
