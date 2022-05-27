@@ -38,13 +38,13 @@ class Agendamento extends Migration
         );
         $this->forge->addKey('id_agend', true);
          $this->forge->createTable('agendamento');
-        $this->forge->foreignkey('id_pro');
+       /* $this->forge->foreignkey('id_pro');*/
 
     }
 
     public function down()
     {
         $this->forge->dropTable('agendamento');
-        $this->forge->dropForeignKey('agendamento','id_pro');
+        /*$this->forge->dropForeignKey('agendamento','id_pro');*/
     }
 }
