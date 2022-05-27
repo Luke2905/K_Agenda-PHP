@@ -26,6 +26,11 @@ class Servicos extends Migration
                     'constraint' => 6.2,
                     'null' => false,
                 ],
+                'descriçao_serv' =>[
+                    'type' => 'VARCHAR',
+                    'constraint' => 100,
+                    'null' => false,
+                ],
                 'foto_serv' =>[
                     'type' => 'VARCHAR',
                     'constraint' => 2083,
