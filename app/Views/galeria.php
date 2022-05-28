@@ -14,10 +14,8 @@ foreach($servicos as $row){
     echo "</div>";
     echo "<h3>".$row['nome_serv']."</h3>";
     echo "<h4>R$ ".$row['preco_serv']."</h4>";
-    echo "<p>Corte chave de mais confia</p>";
+    echo "<p>".$row['descriçao_serv']."</p>";
     echo "</div>";
-
-
 }
 
 ?>
