@@ -1,6 +1,6 @@
-<?php $this->extend("layout_padrao");?>
+<?php $this->extend("admin/layout_adm");?>
 
-<?php $this->section("funcionarios");?>
+<?php $this->section("Ver_Pro");?>
 
 <section class="pesquisa">
     <div class="center">
@@ -12,6 +12,7 @@
     </div>
 </section>
 
+<a style="margin:10px;" class="btn btn-warning" href="/Admin/menuPro" role="button">Voltar</a>
 <div class="container_func">
     
 <?php 
