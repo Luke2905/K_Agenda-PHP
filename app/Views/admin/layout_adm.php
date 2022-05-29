@@ -46,6 +46,8 @@
   <?php echo $this->renderSection("Cadastro");?>
   <?php echo $this->renderSection("Deletar");?>
   <?php echo $this->renderSection("Alterar");?>
+  <?php echo $this->renderSection("Alterar_pro");?>
+  <?php echo $this->renderSection("Ver_Pro");?>
   <?php echo $this->renderSection("Selecionar_Pro");?>
   <?php echo $this->renderSection("Menu_Serv");?>
   <?php echo $this->renderSection("Profissionais");?>
