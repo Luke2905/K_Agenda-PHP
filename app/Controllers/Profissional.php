@@ -75,8 +75,9 @@ class Profissional extends BaseController
             header("Refresh:1; url=/Profissional/selectPro");
         }else{
             $dados['profissionais'] = $this->profissionalmodel->find($dados['id']);
-            echo view('/admin/alt_pro',$dados);
+            echo view('/admin/edit_funcionarios_adm',$dados);
         }
+       
     }
 
     public function altProfissional(){
@@ -91,6 +92,11 @@ class Profissional extends BaseController
     }else {
     echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
     }
+    }
+
+    public function verProfissional(){
+        $dados['profissionais'] = $this->profissionalmodel->findAll();
+        echo view('/admin/funcionarios_adm',$dados);
     }
 
     public function pesquisarPro(){
