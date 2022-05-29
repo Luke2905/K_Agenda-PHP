@@ -9,21 +9,21 @@ $min = $mindate."T".$mintime;
 ?>
 
 <div class="container_agendamento">
-  <form action="/Agendamento/index" method="POST">
+  <form action="/Agendamento/cadAgendamento" method="POST">
     <div class="row">
       <h4>Conta</h4>
       <div class="input-group input-group-icon">
-        <input type="text" placeholder="Nome Completo" name="nome"/>
+        <input type="text" placeholder="Nome Completo" name="nome" required/>
       </div>
       <div class="input-group input-group-icon">
-        <input type="email" placeholder="email" name="email"/>
+        <input type="email" placeholder="email" name="email" required/>
       </div>
     </div>
     <div class="row">
       <div class="col-half">
         <h4>Data Agendamento</h4>
         <div class="input-group">
-        <input type="datetime-local" id="datePickerId" name="meeting-time" min="<?php echo $min ?>">
+        <input type="datetime-local" id="datePickerId" name="agendamento" min="<?php echo $min ?>" required>
         </div>
       </div>
       <div class="col-half">
