@@ -679,6 +679,81 @@ section.pesquisa input{
   width: 20px;
 }
 
+/*funcionario adm edit*/
+
+.edit_container_func {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  max-width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+
+.edit_container_func .card {
+  width: 60vh;
+  height: 70vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px black;
+  overflow: hidden;
+  margin-top: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  float: left;
+  margin: 2px;
+  margin-bottom: 10px;
+  background-color: var(--box-bg);
+  padding: 4%;
+  padding-top: 2%;
+  margin: 15px;
+}
+
+.edit_container_func .card:hover {
+  transform: translate(-5px);
+  box-shadow: 0 12px 16px black;
+}
+
+.edit_container_func .card img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.edit_container_func .card h3 {
+  font-weight: 800;
+}
+
+.edit_container_func .card h4 {
+  font-weight: 600;
+}
+
+.edit_container_func .card p {
+  padding: 0.2rem;
+  font-size: 14px;
+}
+
+.edit_container_func .card a {
+  margin: 18px;
+  background: var(--button-bg);
+  color: white;
+  padding: 8px 6px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.edit_container_func .card a:hover {
+  background: var(--button-hover);
+}
+
+.CardImagem {
+  height: 80%;
+}
+
 /*localizacao*/
 
 .barbearia_img_localizacao {
