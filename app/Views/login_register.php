@@ -7,7 +7,7 @@
         <img alt="">
     </div>
     <div class="login_form">
-        <form action="/Home/autenticar" method="post">
+        <form action="/Login/autenticar" method="post">
             <div class="login_header">
                 <div class="titulo_login">
                     <h1>Login</h1>
