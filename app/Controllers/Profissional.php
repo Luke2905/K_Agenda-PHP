@@ -76,8 +76,7 @@ class Profissional extends BaseController
         }else{
             $dados['profissionais'] = $this->profissionalmodel->find($dados['id']);
             echo view('/admin/edit_funcionarios_adm',$dados);
-        }
-       
+        }       
     }
 
     public function altProfissional(){
