@@ -50,21 +50,7 @@ class Home extends BaseController
     {
         echo view('register_login');
     }
-
-    public function autenticar()
-    {
-        $model = model('LoginModel');
-        $dados = $this->request->getPost();
-        //dd($dados);
-        
-        $model->where('email',$dados['usuario']);
-        $resultado = $model->where('senha',$dados['senha'])->find();
-       // dd($resultado);
-
-       if(count($resultado)>0){
-           return view('/admin/home');
-       }else{
-           return view('login',['erro'=>'Não foi possivel fazer login','classe'=>'footer_p']);
-       }
-    }
+    /* Exclusão da função de autenticar do Controller Home
+    a Função encontra-se no Controller Login
+    */
 }
