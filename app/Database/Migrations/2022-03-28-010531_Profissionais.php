@@ -31,6 +31,16 @@ class Profissionais extends Migration
                     'constraint' => 2083,
                     'null' => false,
                 ],
+                'email_pro' =>[
+                    'type' => 'VARCHAR',
+                    'constraint' => 100,
+                    'null' => false,
+                ],
+                'senha_pro' =>[
+                    'type' => 'VARCHAR',
+                    'constraint' => 25,
+                    'null' => false,
+                ],
 
              ]
             );
