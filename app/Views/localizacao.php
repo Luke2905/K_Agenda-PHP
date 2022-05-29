@@ -18,7 +18,7 @@
   <a href="/Home/mapa">
     <main>
       <section class="barbearia_img_localizacao_parallax">
-        <h1>Kings - São Bernado</h1>
+        <h1>Kings - São Bernardo do Campo</h1>
       </section>
     </main>
   </a>
@@ -28,7 +28,7 @@
   <a href="/Home/mapa">
     <main>
       <section class="barbearia_img_localizacao_parallax">
-        <h1>Kings - Santo Andre</h1>
+        <h1>Kings - Santo André</h1>
       </section>
     </main>
   </a>

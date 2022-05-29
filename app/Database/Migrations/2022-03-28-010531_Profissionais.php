@@ -34,8 +34,9 @@ class Profissionais extends Migration
 
              ]
             );
+            $attributes = ['ENGINE' => 'InnoDB'];
             $this->forge->addKey('id_pro', true);
-            $this->forge->createTable('profissionais');
+            $this->forge->createTable('profissionais',false,$attributes);
     }
 
     public function down()
