@@ -12,7 +12,6 @@
     </div>
 </section>
 
-<a style="margin:10px;" class="btn btn-warning" href="/Admin/menuPro" role="button">Voltar</a>
 <div class="container_func">
     
 <?php 
@@ -20,29 +19,29 @@
 foreach($profissionais as $row){
 
     echo "<div class='card'>";
-    echo "<div class='buttons_adm'>";
-    echo "<a href=''>❌</a>";
-    echo "<a href=''>✏️</a>";
-    echo "</div>";
     echo "<div class='CardImagem'>";
     echo "<img  src='".$row['foto_pro']."'alt=''>";
     echo "</div>";
     echo "<h3>".$row['nome_pro']."</h3>";
     echo "<h4>".$row['telefone_pro']."</h4>";
-    echo "<a href=''>Agendar</a>";
+    echo "<a class='a_adm' href=''>❌</a>";
+    echo "<a class='a_adm' href=''>✏️</a>";
     echo "</div>";
+
 
 }
 
 ?>
 </div>
 
+</div>
+
 <div class="container_func">
     <div class='card'>
         <div class='CardImagem'>
-            <img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''>
+            <a class="adicionar" href="/Profissional/cadPro"><img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''></a>
         </div>
-            <h3>"Adicionar Novo Funcionario"</h3>
+            <h3>Adicionar Novo Funcionario</h3>
             <a href=''>Adicionar</a>
     </div>
 </div>
