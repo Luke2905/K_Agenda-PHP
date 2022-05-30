@@ -668,15 +668,15 @@ section.pesquisa input{
 }
 
 /*funcionario adm*/
-
-.buttons_adm{
-  position: absolute;
+.a_adm{
+  width: 75px;
+  height: 20px;
 }
 
-.buttons_adm a{
+.container_func .card .CardImagem a{
+  padding: 0;
   margin: 0;
-  height: 20px;
-  width: 20px;
+  background: none;
 }
 
 /*funcionario adm edit*/
@@ -1110,6 +1110,7 @@ input[type=number] {
   color: #fff;
 }
 
+
 /*Responsivo*/
 
 /*Google maps*/
@@ -1444,7 +1445,7 @@ input[type=number] {
 
 /*  Tela de Selecionar Pro */
 .select_pro{
-  width: 100%;
+  width: 178vh;
   height: 600px;
 }
 
