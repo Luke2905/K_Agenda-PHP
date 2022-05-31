@@ -24,11 +24,12 @@ foreach($profissionais as $row){
     echo "</div>";
     echo "<h3>".$row['nome_pro']."</h3>";
     echo "<h4>".$row['telefone_pro']."</h4>";
-    echo "<form action='/Profissional/delProfissional'' method='post'>";
-	echo "<button name='deletePro' type='submit' value='".$row['id_pro']."'>Deletar</button>";
+    echo "<form action='/Profissional/delProfissional' method='post'>";
+	echo "<button class='a_adm' name='deletePro' type='submit' value='".$row['id_pro']."'>❌</button>";
     echo "</form>";
-    echo "<a class='a_adm' href=''>❌</a>";
-    echo "<a class='a_adm' href=''>✏️</a>";
+    echo "<form action='/Profissional/altPro' method='post'>";
+	echo "<button class='a_adm' name='alterarPro' type='submit' value='".$row['id_pro']."'>✏️</button>";
+    echo "</form>";
     echo "</div>";
 
 

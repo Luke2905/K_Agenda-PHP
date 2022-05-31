@@ -648,7 +648,7 @@ section.pesquisa input{
   font-size: 14px;
 }
 
-.container_func .card a {
+.container_func .card button{
   margin: 18px;
   background: var(--button-bg);
   color: white;
@@ -659,8 +659,12 @@ section.pesquisa input{
   border-radius: 30px;
 }
 
-.container_func .card a:hover {
+.container_func .card button:hover {
   background: var(--button-hover);
+}
+
+.container_func .card form{
+  display: inline-block
 }
 
 .CardImagem {
@@ -670,7 +674,7 @@ section.pesquisa input{
 /*funcionario adm*/
 .a_adm{
   width: 75px;
-  height: 20px;
+  height: 40px;
 }
 
 .container_func .card .CardImagem a{
