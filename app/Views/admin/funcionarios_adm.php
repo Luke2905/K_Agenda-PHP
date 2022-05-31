@@ -24,8 +24,12 @@ foreach($profissionais as $row){
     echo "</div>";
     echo "<h3>".$row['nome_pro']."</h3>";
     echo "<h4>".$row['telefone_pro']."</h4>";
-    echo "<a class='a_adm' href=''>❌</a>";
-    echo "<a class='a_adm' href=''>✏️</a>";
+    echo "<form action='/Profissional/delProfissional' method='post'>";
+	echo "<button class='a_adm' name='deletePro' type='submit' value='".$row['id_pro']."'>❌</button>";
+    echo "</form>";
+    echo "<form action='/Profissional/altPro' method='post'>";
+	echo "<button class='a_adm' name='alterarPro' type='submit' value='".$row['id_pro']."'>✏️</button>";
+    echo "</form>";
     echo "</div>";
 
 
@@ -42,7 +46,7 @@ foreach($profissionais as $row){
             <a class="adicionar" href="/Profissional/cadPro"><img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''></a>
         </div>
             <h3>Adicionar Novo Funcionario</h3>
-            <a href=''>Adicionar</a>
+            <a href='/Profissional/cadPro'>Adicionar</a>
     </div>
 </div>
 
