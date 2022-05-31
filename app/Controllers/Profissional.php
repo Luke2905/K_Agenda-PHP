@@ -51,7 +51,7 @@ class Profissional extends BaseController
         if($pro){
             echo "<span class='help-block' style='color: Blue;'>deletado com sucesso!</span><br>";
             echo "<a href='/Home/login'>Pagina de Login</a><br>";
-            echo "<a href='/Profissional/index'>Pagina de Profissionais</a>";
+            echo "<a href='/Profissional/verProfissional'>Pagina de Profissionais</a>";
     }else {
         echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
     }
