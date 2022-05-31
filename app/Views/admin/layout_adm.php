@@ -26,7 +26,7 @@
       </button>
       <ul id="menu" role="menu">
         <li><a href="/Admin/menuServ">Galeria</a></li>
-        <li><a href="/Admin/menuPro">Profissional</a></li>
+        <li><a href="/Profissional/verProfissional">Profissional</a></li> <!-- /Admin/VerPro -->
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
         <li><a href="/Home/index">Sair</a></li>

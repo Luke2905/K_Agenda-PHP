@@ -16,13 +16,14 @@
 <form  action="/Profissional/altProfissional" method="post">
     <div class="edit_container_func">
     <div class='card'>
-    <input value='<?php echo $profissionais['id_pro'];?>' type="number" placeholder="codigo" name="id" readonly>
+    <input value='<?php echo $servicos['id_serv'];?>' type="number" placeholder="codigo" name="id" readonly>
         <div class='CardImagem'>
-            <img  src='<?php echo $profissionais['foto_pro'];?>' alt=''>
+            <img  src='<?php echo $servicos['foto_serv'];?>' alt=''>
         </div>
-            <input value='<?php echo $profissionais['foto_pro'];?>' type="text" name="url"placeholder="Foto Profissional">
-            <input value='<?php echo $profissionais['nome_pro'];?>' type="text" name="nome" placeholder="Nome Profissional">
-            <input value='<?php echo $profissionais['telefone_pro'];?>' type="phone" name="telefone"placeholder="Numero Telefone">
+            <input value='<?php echo $servicos['foto_serv'];?>' type="text" name="url"placeholder="Foto Profissional">
+            <input value='<?php echo $servicos['nome_serv'];?>' type="text" name="nome" placeholder="Nome Profissional">
+            <input value='<?php echo $servicos['preco_serv'];?>' type="phone" name="nome"placeholder="Numero Telefone">
+            <input value='<?php echo $servicos['descriçao_serv'];?>' type="phone" name="text"placeholder="Numero Telefone">
             <button  type="submit" class="a_adm" >Salvar</button>
     </div>
 </div>
