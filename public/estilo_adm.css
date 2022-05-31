@@ -648,7 +648,7 @@ section.pesquisa input{
   font-size: 14px;
 }
 
-.container_func .card button{
+.container_func .card a,button{
   margin: 18px;
   background: var(--button-bg);
   color: white;
@@ -659,7 +659,7 @@ section.pesquisa input{
   border-radius: 30px;
 }
 
-.container_func .card button:hover {
+.container_func .card a,button:hover {
   background: var(--button-hover);
 }
 
@@ -667,7 +667,7 @@ section.pesquisa input{
   display: inline-block
 }
 
-.CardImagem {
+.container_func .card .CardImagem {
   height: 80%;
 }
 
@@ -699,8 +699,8 @@ section.pesquisa input{
 }
 
 .edit_container_func .card {
-  width: 60vh;
-  height: 70vh;
+  width: 40vh;
+  height: 60vh;
   border-radius: 8px;
   box-shadow: 0 2px 2px black;
   overflow: hidden;
@@ -711,7 +711,7 @@ section.pesquisa input{
   margin: 2px;
   margin-bottom: 10px;
   background-color: var(--box-bg);
-  padding: 4%;
+  padding: 6%;
   padding-top: 2%;
   margin: 15px;
 }
@@ -739,8 +739,8 @@ section.pesquisa input{
   font-size: 14px;
 }
 
-.edit_container_func .card a {
-  margin: 18px;
+.edit_container_func .card button{
+  margin: 2%;
   background: var(--button-bg);
   color: white;
   padding: 8px 6px;
@@ -750,13 +750,19 @@ section.pesquisa input{
   border-radius: 30px;
 }
 
-.edit_container_func .card a:hover {
+.edit_container_func .card button:hover {
   background: var(--button-hover);
 }
 
-.CardImagem {
-  height: 80%;
+.edit_container_func .card .CardImagem {
+  margin: 4%;
 }
+
+.edit_container_func .card input{
+  margin: 2%;
+  width: 80%;
+}
+
 
 /*localizacao*/
 
@@ -1162,6 +1168,11 @@ input[type=number] {
   .input_grupo{
     width: 50%; 
   }
+
+  .edit_container_func .card {
+    width: 60vh;
+    height: 80vh;
+  }
 }
 
 @media screen and (max-width: 1064px) {
@@ -1247,7 +1258,7 @@ input[type=number] {
     height: 100%;
   }
 
-  .CardImagem {
+  .container_func .card .CardImagem {
     height: 100%;
     width: 100%;
   }

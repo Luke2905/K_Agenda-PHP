@@ -36,18 +36,17 @@ foreach($profissionais as $row){
 }
 
 ?>
-</div>
 
-</div>
-
-<div class="container_func">
-    <div class='card'>
-        <div class='CardImagem'>
-            <a class="adicionar" href="/Profissional/cadPro"><img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''></a>
-        </div>
-            <h3>Adicionar Novo Funcionario</h3>
-            <a href='/Profissional/cadPro'>Adicionar</a>
+<div class='card'>
+    <div class='CardImagem'>
+        <a class="adicionar" href="/Profissional/cadPro"><img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''></a>
     </div>
+    <h3>Adicionar Novo Funcionario</h3>
+    <a href='/Profissional/cadPro'>Adicionar</a>
+</div>
+
+</div>
+
 </div>
 
 <?php $this->endSection(); ?>
