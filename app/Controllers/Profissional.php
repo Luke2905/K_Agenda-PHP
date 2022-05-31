@@ -46,7 +46,8 @@ class Profissional extends BaseController
 
         $model = model('ProfissionalModel');
         $dados = $this->request->getPost();
-        $pro = $model ->db->query("delete from profissionais where id_pro = '$dados[id]'");
+        $delete = $dados['deletePro'];
+        $pro = $model ->db->query("delete from profissionais where id_pro = '$delete'");
 
         if($pro){
             echo "<span class='help-block' style='color: Blue;'>deletado com sucesso!</span><br>";
