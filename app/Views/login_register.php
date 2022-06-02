@@ -29,7 +29,7 @@
             </div>
 
             <div class="registrar">
-                <button  type="submit" >Registrar</button>
+                <button  type="submit" >Entrar</button>
             </div>
 
         </form>
