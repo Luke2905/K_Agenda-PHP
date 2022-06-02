@@ -42,7 +42,7 @@
  database.default.hostname = localhost
  database.default.database = agendaking
  database.default.username = root
- database.default.password = 
+# database.default.password = 
  database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 

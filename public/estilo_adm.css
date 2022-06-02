@@ -255,7 +255,7 @@ a:hover {
   background-color: var(--box-bg);
   box-shadow: 0 2px 2px black;
   padding: 2%;
-  padding-bottom: 6%;
+  padding-bottom: 8%;
   margin: 15px;
 }
 
@@ -267,6 +267,10 @@ a:hover {
 .container .card img {
   width: 250px;
   border-radius: 20px;
+}
+
+.container .card p {
+  margin: 2%;
 }
 
 .container .card h3 {
@@ -281,6 +285,41 @@ a:hover {
 .container .card p {
   padding: 0.2rem;
   font-size: 14px;
+}
+
+.container .card a,button{
+  margin: 18px;
+  background: var(--button-bg);
+  color: white;
+  padding: 8px 6px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.container .card a,button:hover {
+  background: var(--button-hover);
+}
+
+.container .card form{
+  display: inline-block
+}
+
+.container .card .CardImagem {
+  height: 80%;
+}
+
+/*serviço adm*/
+.a_adm{
+  width: 75px;
+  height: 40px;
+}
+
+.container .card .CardImagem a{
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 
 /*Funcionarios*/

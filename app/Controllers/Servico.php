@@ -57,7 +57,7 @@ class Servico extends BaseController
 
     if($pro){
         echo "<span class='help-block' style='color: Blue;'>deletado com sucesso!</span><br>";
-        echo "<a href='/Admin/menuServ'>Voltar para o Menu</a>";
+        echo "<a href='verServico'>Voltar</a>";
     }else {
     echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Serviço!</span>";
     }
@@ -76,7 +76,7 @@ class Servico extends BaseController
             header("Refresh:1; url=/Servico/selectServ");
         }else{
              $dados['servicos'] = $this->servicomodel->find($dados['id']);
-             echo view('/admin/alt_serv',$dados);
+             echo view('/admin/edit_galeria_adm',$dados);
             }
     }
     public function altServico(){
@@ -91,5 +91,10 @@ class Servico extends BaseController
          }else {
             echo "<span class='help-block' style='color: Red;'>Não foi Possivel Alterar o Serviço!</span>";
         }
+    }
+
+    public function verServico(){
+        $dados['servicos'] = $this->servicomodel->findAll();
+        echo view('/admin/galeria_adm',$dados);
     }
 }

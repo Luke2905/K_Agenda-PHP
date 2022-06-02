@@ -1,6 +1,6 @@
 <?php $this->extend("admin/layout_adm");?>
 
-<?php $this->section("Ver_Sev");?>
+<?php $this->section("Ver_Serv");?>
 
 <div class="container">
 
@@ -18,7 +18,7 @@ foreach($servicos as $row){
     echo "<form action='/Servico/delServico' method='post'>";
 	echo "<button class='a_adm' name='id' type='submit' value='".$row['id_serv']."'>❌</button>";
     echo "</form>";
-    echo "<form action='/Profissional/altPro' method='post'>";
+    echo "<form action='/Servico/altServ' method='post'>";
 	echo "<button class='a_adm' name='id' type='submit' value='".$row['id_serv']."'>✏️</button>";
     echo "</form>";
     echo "</div>";

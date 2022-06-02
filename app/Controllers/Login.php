@@ -15,7 +15,7 @@ class Login extends BaseController
         $resultado = $model->where('senha',$dados['senha'])->find();
 
        if(count($resultado)>0){
-           return view('/admin/home');
+           header("Refresh:1; url=/Admin/adminHome");
        }else{
         $model = model('ProfissionalModel');
         $dados = $this->request->getPost();

@@ -25,7 +25,7 @@
         <span id="hamburger"></span>
       </button>
       <ul id="menu" role="menu">
-        <li><a href="/Admin/menuServ">Galeria</a></li>
+        <li><a href="/Servico/verServico">Galeria</a></li>
         <li><a href="/Profissional/verProfissional">Profissional</a></li> <!-- /Admin/VerPro -->
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
@@ -50,7 +50,7 @@
   <?php echo $this->renderSection("Alterar_pro");?>
   <?php echo $this->renderSection("Ver_Pro");?>
   <?php echo $this->renderSection("Selecionar_Pro");?>
-  <?php echo $this->renderSection("Menu_Serv");?>
+  <?php echo $this->renderSection("Ver_Serv");?>
   <?php echo $this->renderSection("Profissionais");?>
   <?php echo $this->renderSection("Cadastro_Servico");?>
   <?php echo $this->renderSection("Servicos");?>
