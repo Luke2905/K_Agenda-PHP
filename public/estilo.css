@@ -361,11 +361,11 @@ section.sobre_equipe>.container_sobre {
 }
 
 .carousel-cell {
-  width: 66%;
-  height: 200px;
+  width: 80%;
+  height: 300px;
   margin-right: 10px;
   background: #8C8;
-  border-radius: 5px;
+  border-radius: 6px;
   counter-increment: carousel-cell;
 }
 
@@ -380,11 +380,11 @@ section.sobre_equipe>.container_sobre {
 }
 
 .carousel-cell--height2 {
-  height: 300px;
+  height: 500px;
 }
 
 .carousel-cell--height3 {
-  height: 400px;
+  height: 600px;
 }
 
 /*Comentarios*/
