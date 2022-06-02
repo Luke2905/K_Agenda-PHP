@@ -59,11 +59,11 @@
 
 <!-- Flickity HTML init -->
 <div class="carousel" data-flickity='{ "adaptiveHeight": true }'>
-  <div class="carousel-cell"></div> <!-- Imagem -->
-  <div class="carousel-cell carousel-cell--height2"></div>  <!-- Imagem -->
-  <div class="carousel-cell carousel-cell--height3"></div> <!-- Imagem -->
-  <div class="carousel-cell"></div> <!-- Imagem -->
-  <div class="carousel-cell carousel-cell--height2"></div> <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height3" style="background-image: url(https://homensquesecuidam.com/wp-content/uploads/2017/10/cortes-de-cabelo-masculino-curto-homens-que-se-cuidam-o.jpg); background-size: cover; background-repeat: no-repeat; " ></div> <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height2" style="background-image: url(https://homensquesecuidam.com/wp-content/uploads/2017/10/cortes-de-cabelo-masculino-curto-homens-que-se-cuidam-z-.jpg); background-size: cover; background-repeat: no-repeat; " >></div>  <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height3" style="background-image: url(https://blog.trinks.com/wp-content/uploads/2019/08/corte-degradê-masculino-cabelo-crespo.jpg); background-size: cover; background-repeat: no-repeat; " ></div> <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height3" style="background-image: url(https://homensquesecuidam.com/wp-content/uploads/2017/10/cortes-de-cabelo-masculino-curto-homens-que-se-cuidam-h.jpg); background-size: cover; background-repeat: no-repeat; "></div> <!-- Imagem -->
+  <div class="carousel-cell carousel-cell--height2" style="background-image: url(https://homensquesecuidam.com/wp-content/uploads/2017/10/cortes-de-cabelo-masculino-curto-homens-que-se-cuidam-b.jpg); background-size: cover; background-repeat: no-repeat; "></div> <!-- Imagem -->
 </div>
 
 <!--Comentarios-->
