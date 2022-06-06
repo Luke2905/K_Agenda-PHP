@@ -88,8 +88,8 @@ class Profissional extends BaseController
         $pro = $model ->db->query("update profissionais set nome_pro='$dados[nome]',foto_pro='$dados[url]',telefone_pro='$dados[telefone]' where id_pro ='$dados[id]'");
        // dd($dados);
        if($pro){
-        echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";
-        echo "<a href='/Admin/menuPro'>Voltar</a><br>";
+        echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";;
+        header ("Refresh:2; url=/Profissional/verProfissional");
     }else {
     echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
     }
