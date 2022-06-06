@@ -3,12 +3,22 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
+use App\Models\AgendamentoModel;
+use App\Models\ProfissionalModel;
 class Admin extends BaseController
 {
+
+    public $agendamentolmodel;
+
+    public function __construct(){
+        $this->agendamentomodel = new AgendamentoModel();
+        $this->profissionalmodel = new ProfissionalModel();
+    }
+
     public function adminHome()
     {
-        echo view('admin/home');
+        $dados['agendamento'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, agendamento.data_agend  from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro;");
+        echo view('admin/home',$dados);
     }
 
     public function novoUser()

@@ -83,42 +83,17 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Gilvan</td>
-        <td>25/04/2022 14:00</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Marcos</td>
-        <td>25/04/2022 13:00</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>Spencer</td>
-        <td>25/04/2022 13:00</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Lucas</td>
-        <td>Gilvan</td>
-        <td>25/04/2022 15:00</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Jaco</td>
-        <td>Gilvan</td>
-        <td>25/04/2022 16:00</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Jaime</td>
-        <td>Spencer</td>
-        <td>25/04/2022 15:00</td>
-      </tr>
+    <?php foreach($agendamento->getResult('array') as $row){
+
+      echo "<tr>";
+      echo "<th scope='row'>".$row['id_agend']."</th>";
+      echo "<td>".$row['nome_agend']."</td>";
+      echo "<td>".$row['nome_pro']."</td>";
+      echo "<td>".$row['data_agend']."</td>";
+      echo "</tr>";
+    } 
+    ?>
+      
     </tbody>
   </table>
 
