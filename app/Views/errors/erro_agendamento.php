@@ -26,7 +26,7 @@
 <body>
     <div class="container">
     <div class="alert alert-warning" role='alert'>
-    Horario não disponivel
+    <?php echo $erro; header("Refresh:1; url=/Agendamento/index");?>
     <div class='d-flex justify-content-center'>
 <div class='spinner-border' role='status'>
 </div>

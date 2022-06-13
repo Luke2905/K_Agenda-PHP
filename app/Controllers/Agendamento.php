@@ -32,8 +32,9 @@ class Agendamento extends BaseController
         $resultado = $model->where('data_agend',$dados['agendamento'])->find();
 
         if(count($resultado)>0){
-            echo view('/errors/erro_agendamento');
-            header("Refresh:1; url=/Agendamento/index");
+            $dados['erro'] = 'Não foi possivel agendar horário';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
 
         }else{
             $agend = $model ->db->query("insert into agendamento(nome_agend,email_agend,id_pro,data_agend) values ('$dados[nome]','$dados[email]','$dados[id]','$dados[agendamento]')");
