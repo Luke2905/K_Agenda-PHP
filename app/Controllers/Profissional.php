@@ -73,7 +73,9 @@ class Profissional extends BaseController
         $dados = $this->request->getPost();
 
         if(empty($dados)){
-            echo view('/errors/erro_select');
+            $dados['erro'] = 'Profissional não encontrado';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_select',$dados);
             header("Refresh:1; url=/Profissional/selectPro");
         }else{
             $dados['profissionais'] = $this->profissionalmodel->find($dados['alterarPro']);

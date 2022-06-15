@@ -26,8 +26,10 @@ class Login extends BaseController
             echo "<a>Profissional Logado</a><br>";
             echo "<a href='/Home/index'>Sair</a><br>";
         }else{
-           echo "<span class='help-block' style='color: Red;'>Não foi Possivel fazer login!</span>";
-           header("Refresh:1; url=/Home/Login");
+            $dados['erro'] = 'Não foi Possivel fazer login!';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_select',$dados);
+            header("Refresh:1; url=/Home/login");
         }
        }
     }
