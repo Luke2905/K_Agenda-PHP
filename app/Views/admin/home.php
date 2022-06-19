@@ -5,7 +5,7 @@
 <div class="graficos">
 
 <div id="grafico1">
-    <h3>Frequencia</h3>
+    <h3>Agendamentos</h3>
 </div>
 
 <script>
@@ -13,22 +13,26 @@
     var el = document.getElementById("grafico1");
     var options = {
         chart: {
-            type: 'line',
+            type: 'bar',
             heigth: 100,
             width: 700
         },
         series: [
             {
-                name: 'Homens',
-                data: [10,50,35,40,70]
+                name: 'Agendamentos',
+                data: [    <?php 
+    foreach($agendamento->getResult('array') as $row){ /*-> retorna os numeros de agendamentos */
+      echo "".$row['Agendamentos'].",";
+    } 
+    ?>]
             },
-            {
-                name: 'Mulheres',
-                data: [60,35,50,40,20]
-            }
         ],
-        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
-        colors: ['#004cff', '#ff00ea'],
+        labels: [<?php 
+    foreach($agendamento->getResult('array') as $row){ /*-> retorna os nomes dos Profissionais */
+      echo "'".$row['nome_pro']."',";
+    } 
+    ?>],
+        colors: ['#004cff'],
         
     };
 
@@ -83,7 +87,9 @@
       </tr>
     </thead>
     <tbody>
-    <?php foreach($agendamento->getResult('array') as $row){
+    <?php 
+    foreach($tabela->getResult('array') as $row){ 
+
 
       echo "<tr>";
       echo "<th scope='row'>".$row['id_agend']."</th>";
