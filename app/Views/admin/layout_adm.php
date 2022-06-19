@@ -19,7 +19,7 @@
 <body>
 
 <header id="header">
-    <a id="logo" href="/Admin/adminHome"><img src="/img/logo_branco.png" alt=""></a>
+    <a id="logo" href="/Login/login"><img src="/img/logo_branco.png" alt=""></a>
     <nav id="nav">
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
         <span id="hamburger"></span>
@@ -29,7 +29,7 @@
         <li><a href="/Profissional/verProfissional">Profissional</a></li> <!-- /Admin/VerPro -->
         <li><a href="/Home/agendamento">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
-        <li><a href="/Home/index">Sair</a></li>
+        <li><a href="/Login/logout">Sair</a></li>
         
         <label for="modo-escuro">
             <button class="checkbox_dark" role="switch" id="checkbox_dark"></button>
