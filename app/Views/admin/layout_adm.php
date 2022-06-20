@@ -27,7 +27,7 @@
       <ul id="menu" role="menu">
         <li><a href="/Servico/verServico">Galeria</a></li>
         <li><a href="/Profissional/verProfissional">Profissional</a></li> <!-- /Admin/VerPro -->
-        <li><a href="/Home/agendamento">Agendamento</a></li>
+        <li><a href="/Admin/Lista_Agendamentos">Agendamento</a></li>
         <li><a href="/Home/index">Localizacão</a></li>
         <li><a href="/Login/logout">Sair</a></li>
         
@@ -57,6 +57,7 @@
   <?php echo $this->renderSection("Deletar_Servico");?>
   <?php echo $this->renderSection("Alterar_Servico");?>
   <?php echo $this->renderSection("Selecionar_Serv");?>
+  <?php echo $this->renderSection("Lista_Agendamentos");?>
 
 </body>
 <!--footer-->

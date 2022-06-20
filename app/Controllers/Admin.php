@@ -55,5 +55,10 @@ class Admin extends BaseController
         echo view('admin/menu_serv');
     }
 
+    public function Lista_Agendamentos()
+    {
+        echo view('admin/lista_agendamentos');
+    }
+
 }
 
