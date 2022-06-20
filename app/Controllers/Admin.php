@@ -17,7 +17,8 @@ class Admin extends BaseController
 
     public function adminHome()
     {
-        $dados['agendamento'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, agendamento.data_agend  from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro;");
+        $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y %H:%i') as data_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro;"); /*->dados da tabela */
+        $dados['agendamento'] = $this->agendamentomodel->query("select profissionais.nome_pro, count(agendamento.data_agend) as Agendamentos  from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro group by nome_pro;"); /*->dados do grafico 1 */
         echo view('admin/home',$dados);
     }
 

@@ -14,15 +14,13 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
- CI_ENVIRONMENT = development
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
 
 # app.baseURL = ''
-# If you have trouble with `.`, you could also use `_`.
-# app_baseURL = ''
 # app.forceGlobalSecureRequests = false
 
 # app.sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'
@@ -39,11 +37,11 @@
 # DATABASE
 #--------------------------------------------------------------------
 
- database.default.hostname = localhost
- database.default.database = agendaking
- database.default.username = root
+database.default.hostname = localhost
+database.default.database = agendaking
+database.default.username = root
 # database.default.password = 
- database.default.DBDriver = MySQLi
+database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 
 # database.tests.hostname = localhost
