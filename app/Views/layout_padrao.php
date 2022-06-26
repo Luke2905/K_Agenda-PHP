@@ -25,7 +25,7 @@
       </button>
       <ul id="menu" role="menu">
         <li><a href="/Servico/index">Galeria</a></li>
-        <li><a href="/Profissional/index">Profissionais</a></li>
+        <li><a href="/Profissional/index">Profissional</a></li>
         <li><a href="/Agendamento/index">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localizacão</a></li>
         <li><a href="/Home/login">Login</a></li>
@@ -63,19 +63,19 @@
     </div>
   </div>
   <div class="w50">
-    <a href="https://twitter.com/n_oels"><i class="fab fa-twitter"></i> /n_oels</a>
+    <a href="https://twitter.com/n_oels"><i class="fab fa-twitter"></i>Twitter</a>
     <br />
-    <a href="https://www.instagram.com/n.oel.s/"><i class="fab fa-instagram"></i> /n.oel.s</a>
+    <a href="https://www.instagram.com/n.oel.s/"><i class="fab fa-instagram"></i>Instagram</a>
     <br />
-    <a href="https://twitter.com/n_oels"><i class="fab fa-twitter"></i> /n_oels</a>
+    <a href="https://twitter.com/n_oels"><i class="fab fa-twitter"></i>Facebook</a>
     <br />
-    <a href="https://www.instagram.com/n.oel.s/"><i class="fab fa-instagram"></i> /n.oel.s</a>
+    <a href="https://www.instagram.com/n.oel.s/"><i class="fab fa-instagram"></i>LinkedIn</a>
     <br />
   </div>
   <div class="clear"></div>
 </footer>
 <footer class="footer2">
-  <p class="footer_p">Atividade de PRWII - ETECJK - Professor: Jefferson</p>
+  <p class="footer_p">King Agendamentos © Todos os Direitos Reservados 2022</p>
 </footer>
 
 </html>
