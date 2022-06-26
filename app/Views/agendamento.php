@@ -23,7 +23,8 @@ $min = $mindate."T".$mintime;
       <div class="col-half">
         <h4>Data Agendamento</h4>
         <div class="input-group">
-        <input type="datetime-local" id="datePickerId" name="agendamento" min="<?php echo $min ?>" required>
+        <input type="date" id="datePickerId" name="dia" required>
+        <input type="time" id="datePickerId" name="hora" min="<?php echo $min ?>" required>
         </div>
       </div>
       <div class="col-half">
