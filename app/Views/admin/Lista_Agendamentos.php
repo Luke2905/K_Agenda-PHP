@@ -12,19 +12,26 @@
                 <th>Agendamento</th>
                 <th></th>
                 <th></th>
-            </tr>
-            <tr class="Conteudo_agenda">
-                <td>1</td>
-                <td>Augusto</td>
-                <td>Gusravinho</td>
-                <td>12/04/2022</td>
-                <form action="Metodo Feito" method="post">
-                <td><button class="feito">Feito</button></td>
-                </form>
-                <form action="Metodo Cancelado" method="post">
-                <td><button class="cancelar">Cancelar</button></td>
-                </form>
-            </tr>
+            <?php foreach($tabela->getResult('array') as $row){ 
+
+echo "</tr>";
+echo "<tr class='Conteudo_agenda'>";
+echo "<th scope='row'>".$row['id_agend']."</th>";
+echo "<td>".$row['nome_agend']."</td>";
+echo "<td>".$row['nome_pro']."</td>";
+echo "<td>".$row['data_agend']."</td>";
+echo "<td>".$row['hora_agend']."</td>";
+echo "<form action='/Agendamento/concluirAgendamento' method='post'>";
+echo "<td><button class='feito'' name='Feito' type='submit' value='".$row['id_agend']."'>Feito</button></td>";
+echo "</form>";
+echo "<form action='/Agendamento/cancelarAgendamento' method='post'>";
+echo "<td><button class='cancelar' name='Cancelado' type='submit' value='".$row['id_agend']."'>Cancelar</button></td>";
+echo "</form>";
+echo "</tr>";
+} 
+?>
+
+            
         </thead>
     </table>
 </div>
