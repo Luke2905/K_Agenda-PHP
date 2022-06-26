@@ -1,4 +1,4 @@
-                                              <?php $this->extend("layout_padrao");?>
+<?php $this->extend("layout_padrao");?>
 
 <?php $this->section("pagina_inicial");?>
 
@@ -22,17 +22,15 @@
       <div class="imagem_circulo">
         <div class="img_avatar"></div>
         <div class="descicao_avatar">
-          <h3>Nome</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus nostrum vel porro minima qui,
-            explicabo sunt.</p>
+          <h3>Alberto</h3>
+          <p>Otimo lugar para se trabalhar!</p>
         </div>
       </div>
       <div class="imagem_circulo">
         <div class="img_avatar2"></div>
-        <div class="descricao_avatar">
-          <h3>Nome</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus nostrum vel porro minima qui,
-            explicabo sunt.</p>
+        <div class="descicao_avatar">
+          <h3>Michael</h3>
+          <p>É uma experiencia muito gratificante poder fazer parte desta equipe.</p>
         </div>
       </div>
     </div>
@@ -40,15 +38,8 @@
       <div class="line_text">
         <div class="line" style="width: 10%; height: 4px;"></div>
         <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam
-          culpa consequuntur vero dicta dolor vitae. Enim voluptatem sint impedit nesciunt corporis, quas ut laboriosam
-          quia. lorem</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam
-          culpa consequuntur vero dicta dolor vitae. Enim voluptatem sint impedit nesciunt corporis, quas ut laboriosam
-          quia. lorem</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam
-          culpa consequuntur vero dicta dolor vitae. Enim voluptatem sint impedit nesciunt corporis, quas ut laboriosam
-          quia. lorem</p>
+        <p>A King Agendamentos é um site que tem como objetivo automatizar e facilitar o gerenciamento de horários agendados em salões de beleza.</p>
+        <p>Nossa equipe é formada por profissionais comprometidos com excelência nas realizações de suas atividades e focados nas necessidades de nossos clientes.</p>
       </div>
     </div>
 </section>
@@ -73,51 +64,52 @@
     <div class="outer">
       <div class="card" style="--delay:-1;">
         <div class="content">
-          <div class="img"><img src="https://img.r7.com/images/ariel-barbeiro-instagram-sucesso-18122018131137018"
+          <div class="img"><img src="https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png"
               alt=""></div>
           <div class="details">
             <span class="name">Sumit Kapoor</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
+            <p>Ótimo atendimento, local limpo e bem frequentado.</p>
           </div>
         </div>
       </div>
       <div class="card" style="--delay:0;">
         <div class="content">
-          <div class="img"><img src="https://img.r7.com/images/ariel-barbeiro-instagram-sucesso-18122018131137018"
+          <div class="img"><img src="https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png"
               alt=""></div>
           <div class="details">
             <span class="name">Andrew Neil</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
+            <p>Lugar aconchegante, simpático e tranquilo.
+Equipe atenciosa e educada. Gostei muito do atendimento e do corte de cabelo.</p>
           </div>
         </div>
       </div>
       <div class="card" style="--delay:1;">
         <div class="content">
-          <div class="img"><img src="https://img.r7.com/images/ariel-barbeiro-instagram-sucesso-18122018131137018"
+          <div class="img"><img src="https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png"
               alt=""></div>
           <div class="details">
             <span class="name">Jasmine Carter</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
+            <p>Ótimos profissionais!! Sempre que fui la saí satisfeita com o resultado.</p>
           </div>
         </div>
       </div>
       <div class="card" style="--delay:2;">
         <div class="content">
-          <div class="img"><img src="https://img.r7.com/images/ariel-barbeiro-instagram-sucesso-18122018131137018"
+          <div class="img"><img src="https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png"
               alt=""></div>
           <div class="details">
             <span class="name">Justin Chung</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam</p>
+            <p>Amei, super recomendo! Profissionais excelentes, ambiente muito agradável e o preço melhor ainda.</p>
           </div>
         </div>
       </div>
       <div class="card" style="--delay:2;">
         <div class="content">
-          <div class="img"><img src="https://img.r7.com/images/ariel-barbeiro-instagram-sucesso-18122018131137018"
+          <div class="img"><img src="https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png"
               alt=""></div>
           <div class="details">
             <span class="name">Adrina Calvo</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque quos reiciendis minus laboriosam </p>
+            <p>Profissionais excelentes,  vc se sente bem cuidada e satisfeita com os cortes e colorações.</p>
           </div>
         </div>
       </div>
