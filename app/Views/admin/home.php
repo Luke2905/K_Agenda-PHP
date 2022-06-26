@@ -4,8 +4,25 @@
 
 <div class="graficos">
 
+<div id="solicitacao"> 
+<a href="/Agendamento/selectAgendamento">
+<button class="btn btn-outline-dark" >
+  
+              Solicitações
+            <span class="badge bg-dark text-white ms-1 rounded-pill"><?php 
+    foreach($solicitacao->getResult('array') as $row){ /*-> retorna os numeros de agendamentos */
+      echo $row['Agendamentos'];
+    } 
+    ?></span>
+    </button>
+</a> 
+
+</div>
+
+
+
 <div id="grafico1">
-    <h3>Agendamentos</h3>
+    <h3>Agendamentos por Cabelereiro</h3>
 </div>
 
 <script>
@@ -76,36 +93,40 @@
 <div>
 <h3>Agendamentos do Dia</h3>
 <div id="agenda" class="table-wrapper-scroll-y my-custom-scrollbar">
-  <table class="table table-bordered table-striped mb-0">
-  
-    <thead >
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Cliente</th>
-        <th scope="col">Cabelereiro</th>
-        <th scope="col">Agendamento</th>
-      </tr>
-    </thead>
-    <tbody>
-    <?php 
-    foreach($tabela->getResult('array') as $row){ 
+</div>
+</div>
+<script>
 
-
-      echo "<tr>";
-      echo "<th scope='row'>".$row['id_agend']."</th>";
-      echo "<td>".$row['nome_agend']."</td>";
-      echo "<td>".$row['nome_pro']."</td>";
-      echo "<td>".$row['data_agend']."</td>";
-      echo "</tr>";
+    var el = document.getElementById("agenda");
+    var options = {
+        chart: {
+            type: 'line',
+            heigth: 100,
+            width: 400
+        },
+        series: [
+            {
+                name: 'Agendamentos',
+                data: [    <?php 
+    foreach($grafico->getResult('array') as $row){ /*-> retorna os numeros de agendamentos */
+      echo "".$row['Agendamentos'].",";
     } 
-    ?>
-      
-    </tbody>
-  </table>
+    ?>]
+            },
+        ],
+        labels: [<?php 
+    foreach($grafico->getResult('array') as $row){ /*-> retorna os nomes dos Profissionais */
+      echo "'".$row['Data']."',";
+    } 
+    ?>],
+        colors: ['#004cff'],
+        
+    };
 
-</div>
-</div>
+    var chart = new ApexCharts(el, options);
+    chart.render();
 
+</script>
 </div>
 
 <a href="/Home/index">Sair</a>
