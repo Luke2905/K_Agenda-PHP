@@ -34,7 +34,17 @@ class Agendamento extends Migration
                 'null' => false,
             ],
             'data_agend' =>[
-                'type' => 'DATETIME',
+                'type' => 'DATE',
+                'null' => false,
+            ],
+            'hora_agend' =>[
+                'type' => 'VARCHAR',
+                'constraint' => 5,
+                'null' => false,
+            ],
+            'status_agend' =>[
+                'type' => 'VARCHAR',
+                'constraint' => 100,
                 'null' => false,
             ],
 
