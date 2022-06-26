@@ -6,8 +6,8 @@
     <div class="center">
         <form action="/Profissional/pesquisarPro" method="post">
             <h2>Busque nossos funcionarios</h2>
-            <input type="text" name="search" placeholder="Insira a pesquisa">
-            <input type="submit" value="pesquisar">
+            <input type="text" name="search" placeholder="Digite um nome">
+            <input type="submit" value="Pesquisar">
         </form>
     </div>
 </section>

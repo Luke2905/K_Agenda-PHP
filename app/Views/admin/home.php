@@ -74,7 +74,7 @@
 
 </script>
 <div>
-<h3>Agendamentos Dia</h3>
+<h3>Agendamentos do Dia</h3>
 <div id="agenda" class="table-wrapper-scroll-y my-custom-scrollbar">
   <table class="table table-bordered table-striped mb-0">
   

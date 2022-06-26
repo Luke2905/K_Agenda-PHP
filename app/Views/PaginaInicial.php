@@ -1,4 +1,4 @@
-<?php $this->extend("layout_padrao");?>
+                                              <?php $this->extend("layout_padrao");?>
 
 <?php $this->section("pagina_inicial");?>
 
@@ -29,7 +29,7 @@
       </div>
       <div class="imagem_circulo">
         <div class="img_avatar2"></div>
-        <div class="descicao_avatar">
+        <div class="descricao_avatar">
           <h3>Nome</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus nostrum vel porro minima qui,
             explicabo sunt.</p>

@@ -25,7 +25,7 @@
       </button>
       <ul id="menu" role="menu">
         <li><a href="/Servico/index">Galeria</a></li>
-        <li><a href="/Profissional/index">Profissional</a></li>
+        <li><a href="/Profissional/index">Profissionais</a></li>
         <li><a href="/Agendamento/index">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localizacão</a></li>
         <li><a href="/Home/login">Login</a></li>
