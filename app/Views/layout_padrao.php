@@ -29,6 +29,7 @@
         <li><a href="/Agendamento/index">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localizacão</a></li>
         <li><a href="/Home/login">Login</a></li>
+         <li><a href="">FAQ</a></li> <! -- ADICIONAR NOVA PÁGINA PARA PERGUNTAS FREQUENTES -->
         
         <label for="modo-escuro">
             <button class="checkbox_dark" role="switch" id="checkbox_dark"></button>
