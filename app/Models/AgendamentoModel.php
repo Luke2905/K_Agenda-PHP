@@ -14,7 +14,7 @@ class AgendamentoModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nome_agend','email_agend','data_agend','hora_agend','status_agend'];
 
     // Dates
     protected $useTimestamps = false;
