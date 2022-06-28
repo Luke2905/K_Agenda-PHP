@@ -15,6 +15,10 @@
       <input type="password" class="form-control" id="inputPassword4" placeholder="senha" name="senha">
     </div>
   </div>
+  <div class="form-group col-md-6">
+  <label for="inputPassword4">Repita Senha</label>
+  <input type="password" class="form-control" id="confirm_Password4" placeholder="confimar-senha" name="confirmar-senha"required>                  
+                </div>
   <div class="form-group">
     <label for="inputAddress">Nome</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="nome" name="nome">
