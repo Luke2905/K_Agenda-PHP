@@ -64,13 +64,11 @@
     </div>
   </div>
   <div class="w50">
-    <a href="https://twitter.com/n_oels"><i class="fab fa-twitter"></i>Twitter</a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i>Twitter</a>
     <br />
-    <a href="https://www.instagram.com/n.oel.s/"><i class="fab fa-instagram"></i>Instagram</a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i>Facebook</a>
     <br />
-    <a href="https://twitter.com/n_oels"><i class="fab fa-twitter"></i>Facebook</a>
-    <br />
-    <a href="https://www.instagram.com/n.oel.s/"><i class="fab fa-instagram"></i>LinkedIn</a>
+    <a href="https://www.instagram.com/king.agendamentos?igshid=YmMyMTA2M2Y=/"><i class="fab fa-instagram"></i>Instagram</a>
     <br />
   </div>
   <div class="clear"></div>
