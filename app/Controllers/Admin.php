@@ -19,8 +19,9 @@ class Admin extends BaseController
     {
         $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y %H:%i') as data_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro;"); /*->dados da tabela */
         $dados['solicitacao'] = $this->agendamentomodel->query("select  count(id_agend) as Agendamentos from agendamento where status_agend = 'Aguardando Confirmação';"); /*->Exibe o numero de Solicitações de Agendamento*/
-        $dados['grafico'] = $this->agendamentomodel->query("select date_format(agendamento.data_agend, '%d/%c/%Y') as 'Data', count(agendamento.data_agend) as Agendamentos  from agendamento group by data_agend;"); /*-> dados do grafico agendamentos do dia*/
-        $dados['agendamento'] = $this->agendamentomodel->query("select profissionais.nome_pro, count(agendamento.data_agend) as Agendamentos  from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro group by nome_pro;"); /*->dados do grafico 1 */
+        $dados['grafico'] = $this->agendamentomodel->query("select date_format(agendamento.data_agend, '%d/%c/%Y') as 'Data', count(agendamento.data_agend) as Agendamentos  from agendamento  where status_agend = 'Ativo' group by data_agend;"); /*-> dados do grafico agendamentos do dia*/
+        $dados['agendamento'] = $this->agendamentomodel->query("select profissionais.nome_pro, count(agendamento.data_agend) as Agendamentos  from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where status_agend = 'Concluido' group by nome_pro;"); /*->dados do grafico 1 */
+        $dados['cancelado'] = $this->agendamentomodel->query("select profissionais.nome_pro, count(agendamento.data_agend) as Agendamentos  from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where status_agend = 'Cancelado' group by nome_pro;");
         echo view('admin/home',$dados);
     }
 
@@ -59,7 +60,7 @@ class Admin extends BaseController
 
     public function Lista_Agendamentos()
     {
-        $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y') as data_agend, agendamento.hora_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro;"); /*->dados da tabela */ /*-> where status_agend = 'Ativo'; */
+        $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y') as data_agend, agendamento.hora_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where status_agend = 'Ativo';"); /*->dados da tabela */ /*->  */
         echo view('admin/lista_agendamentos',$dados);
     }
 

@@ -7,7 +7,7 @@
 <h1 class="titulo" >Confirmar Agendamento</h1><br>
 
 <div class="select_pro">
-<form action="/Agendamento/confirmarAgendamento" method="post">
+<form action="/Agendamento/verAgend" method="post">
 <select id="sel_pro"class="form-select bg-light text-dark" size="5" aria-label="size 5 select example" name="id">
   <?php foreach($servicos as $row){
 
@@ -46,7 +46,7 @@ echo $response;
 
 ?>
 </select>
-  <button type="submit" name="Confirmar" class="btn btn-primary">Confirmar</button>
+  <button type="submit" name="Confirmar" class="btn btn-primary">Ver</button>
 </form><br>
 
 </div>

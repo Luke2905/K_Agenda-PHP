@@ -33,9 +33,10 @@ class Profissional extends BaseController
         $pro = $model ->db->query("insert into profissionais(nome_pro,telefone_pro,foto_pro) values ('$dados[nome]','$dados[telefone]','$dados[url]')");
 
         if($pro){
-            echo "<span class='help-block' style='color: Blue;'>Cadastro efetuado com sucesso!</span><br>";
-            echo "<a href='/Home/login'>Pagina de Login</a><br>";
-            echo "<a href='/Profissional/index'>Pagina de Profissionais</a>";
+            $dados['aviso'] = 'Cadastrado com sucesso!';
+            $dados['class'] = 'container';
+            echo view('/errors/sucess_alert',$dados);
+            header ("Refresh:2; url=/Profissional/verProfissional");
     }else {
         echo "<span class='help-block' style='color: Red;'>Erro no cadastro!</span>";
     }
@@ -90,10 +91,14 @@ class Profissional extends BaseController
         $pro = $model ->db->query("update profissionais set nome_pro='$dados[nome]',foto_pro='$dados[url]',telefone_pro='$dados[telefone]' where id_pro ='$dados[id]'");
        // dd($dados);
        if($pro){
-        echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";;
+        $dados['aviso'] = 'Alterado com sucesso!';
+        $dados['class'] = 'container';
+        echo view('/errors/sucess_alert',$dados);
         header ("Refresh:2; url=/Profissional/verProfissional");
     }else {
-    echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
+        $dados['erro'] = 'Não foi Possivel deletar o profissional!';
+        $dados['class'] = 'container';
+        echo view('/errors/erro_agendamento',$dados);
     }
     }
 

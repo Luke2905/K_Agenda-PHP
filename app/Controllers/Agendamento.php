@@ -54,7 +54,7 @@ class Agendamento extends BaseController
             //     dd($resultado);
             // }while(count($resultado) > 0); 
 
-                $dados['aviso'] = 'Seu horario foi agendado';
+                $dados['aviso'] = 'Agendamento Solicitado';
                 $dados['class'] = 'container';
                 echo view('/errors/sucess_alert',$dados);
                 header("Refresh:2; url=/Agendamento/index");
@@ -71,13 +71,27 @@ class Agendamento extends BaseController
         $dados['servicos'] = $this->agendamentomodel->where('status_agend','Aguardando Confirmação')->find();
         echo view('/admin/confirmar_agend',$dados);
         }
-    
+
+        public function verAgend(){
+
+            $dados = $this->request->getPost();
+                if(empty($dados)){
+                    $dados['erro'] = 'Não foi Possivel Confirmar o Agendamento!';
+                    $dados['class'] = 'container';
+                    echo view('/errors/erro_agendamento',$dados);
+                    header("Refresh:1; url=/Agendamento/selecAgendamento");
+                }else{
+                     $dados['servicos'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y') as data_agend, agendamento.hora_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where id_agend = '$dados[id]';");
+                     echo view('/admin/alt_serv',$dados);
+                    }
+            }
     public function confirmarAgendamento(){ /*-> Confirma as Solicitações */
             $model = model('AgendamentoModel');
             $dados = $this->request->getPost();
-          // dd($dados);
+          //dd($dados);
             $agend = $model ->db->query("update agendamento set status_agend = 'Ativo' where id_agend ='$dados[id]'");
             if($agend){
+
                 $dados['aviso'] = 'Agendamento Confirmado';
                 $dados['class'] = 'container';
                 echo view('/errors/sucess_alert',$dados);

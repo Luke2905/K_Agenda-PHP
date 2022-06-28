@@ -23,8 +23,7 @@
             <input value='<?php echo $profissionais['foto_pro'];?>' type="text" name="url"placeholder="Foto Profissional">
             <input value='<?php echo $profissionais['nome_pro'];?>' type="text" name="nome" placeholder="Nome Profissional">
             <input value='<?php echo $profissionais['telefone_pro'];?>' type="phone" name="telefone"placeholder="Numero Telefone">
-            <input value='<?php echo $profissionais['descricao'];?>' type="text" name="descricao"placeholder="Especialização">
-
+            
             <button  type="submit" class="a_adm" >Salvar</button>
     </div>
 </div>

@@ -1366,5 +1366,7 @@ input[type=number] {
   margin: 10px; 
   height: 500px;
 }
-
+.localizacao{
+  height: 600px;
+}
 /*  Fim Tela de Selecionar Pro */

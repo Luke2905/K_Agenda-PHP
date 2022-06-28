@@ -2,6 +2,7 @@
 
 <?php $this->section("localizacao");?>
 
+<div class="localizacao">
 <div class="barbearia_img_localizacao">
   <a href="/Home/mapa">
     <main>
@@ -13,26 +14,8 @@
     </main>
   </a>
 </div>
-
-<div class="barbearia_img_localizacao">
-  <a href="/Home/mapa">
-    <main>
-      <section class="barbearia_img_localizacao_parallax">
-        <h1>Kings - São Bernardo do Campo</h1>
-      </section>
-    </main>
-  </a>
 </div>
 
-<div class="barbearia_img_localizacao">
-  <a href="/Home/mapa">
-    <main>
-      <section class="barbearia_img_localizacao_parallax">
-        <h1>Kings - Santo André</h1>
-      </section>
-    </main>
-  </a>
-</div>
 
 
 <?php $this->endSection(); ?>

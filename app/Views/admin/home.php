@@ -21,6 +21,43 @@
 
 
 
+<div id="grafico3">
+    <h3>Agendamentos Cancelados</h3>
+</div>
+
+<script>
+
+    var el = document.getElementById("grafico3");
+    var options = {
+        chart: {
+            type: 'bar',
+            heigth: 100,
+            width: 700
+        },
+        series: [
+            {
+                name: 'Agendamentos',
+                data: [    <?php 
+    foreach($cancelado->getResult('array') as $row){ /*-> retorna os numeros de agendamentos */
+      echo "".$row['Agendamentos'].",";
+    } 
+    ?>]
+            },
+        ],
+        labels: [<?php 
+    foreach($cancelado->getResult('array') as $row){ /*-> retorna os nomes dos Profissionais */
+      echo "'".$row['nome_pro']."',";
+    } 
+    ?>],
+        colors: ['#eb1607'],
+        
+    };
+
+    var chart = new ApexCharts(el, options);
+    chart.render();
+
+</script>
+
 <div id="grafico1">
     <h3>Agendamentos por Cabelereiro</h3>
 </div>
