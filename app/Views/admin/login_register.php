@@ -13,7 +13,9 @@
                     <h1>Login</h1>
                 </div>
                 <div class="login_button">
-                    <!--  <button><a href="/Home/register">Registrar</a></button> -->
+                    
+                <!--  <button><a href="/Home/register">Registrar</a></button> -->
+                
                 </div>
             </div>
 

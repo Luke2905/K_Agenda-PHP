@@ -25,9 +25,9 @@
       </button>
       <ul id="menu" role="menu">
         <li><a href="/Servico/index">Galeria</a></li>
-        <li><a href="/Profissional/index">Profissional</a></li>
+        <li><a href="/Profissional/index">Profissionais</a></li>
         <li><a href="/Agendamento/index">Agendamento</a></li>
-        <li><a href="/Home/localizacao">Localizacão</a></li>
+        <li><a href="/Home/localizacao">Localização</a></li>
         <li><a href="/Home/login">Login</a></li>
          <li><a href="">FAQ</a></li> <! -- ADICIONAR NOVA PÁGINA PARA PERGUNTAS FREQUENTES -->
         
@@ -74,7 +74,7 @@
   <div class="clear"></div>
 </footer>
 <footer class="footer2">
-  <p class="footer_p">King Agendamentos © Todos os Direitos Reservados 2022</p>
+  <p class="footer_p">© 2022 King Agendamentos. Todos os Direitos Reservados.</p>
 </footer>
 
 </html>
