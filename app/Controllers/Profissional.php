@@ -45,19 +45,36 @@ class Profissional extends BaseController
 
     public function delProfissional(){
 
+        $model = model('AgendamentoModel');
+        $dados = $this->request->getPost();
+        $delete = $dados['deletePro'];
+
+        $resultado = $model->where('id_pro',$delete)->find();
+
+        if(count($resultado)>0){
+            $dados['erro'] = 'Não é possivel deletar este profissional';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
+            header ("Refresh:2; url=/Profissional/verProfissional");
+
+        }else{
         $model = model('ProfissionalModel');
         $dados = $this->request->getPost();
         $delete = $dados['deletePro'];
         $pro = $model ->db->query("delete from profissionais where id_pro = '$delete'");
 
         if($pro){
-            echo "<span class='help-block' style='color: Blue;'>deletado com sucesso!</span><br>";
-            echo "<a href='/Home/login'>Pagina de Login</a><br>";
-            echo "<a href='/Profissional/verProfissional'>Pagina de Profissionais</a>";
+            $dados['aviso'] = 'Deletado com sucesso!';
+            $dados['class'] = 'container';
+            echo view('/errors/sucess_alert',$dados);
+            header ("Refresh:2; url=/Profissional/verProfissional");
     }else {
-        echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Usuario!</span>";
+        $dados['erro'] = 'Não foi Possivel alterar o profissional!';
+        $dados['class'] = 'container';
+        echo view('/errors/erro_agendamento',$dados);
+        header ("Refresh:2; url=/Profissional/verProfissional");
     }
-
+        }
     }
     public function delPro(){
         $dados['profissionais'] = $this->profissionalmodel->findAll();
@@ -96,9 +113,10 @@ class Profissional extends BaseController
         echo view('/errors/sucess_alert',$dados);
         header ("Refresh:2; url=/Profissional/verProfissional");
     }else {
-        $dados['erro'] = 'Não foi Possivel deletar o profissional!';
+        $dados['erro'] = 'Não foi Possivel alterar o profissional!';
         $dados['class'] = 'container';
         echo view('/errors/erro_agendamento',$dados);
+        header ("Refresh:2; url=/Profissional/verProfissional");
     }
     }
 
