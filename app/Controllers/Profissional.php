@@ -38,7 +38,10 @@ class Profissional extends BaseController
             echo view('/errors/sucess_alert',$dados);
             header ("Refresh:2; url=/Profissional/verProfissional");
     }else {
-        echo "<span class='help-block' style='color: Red;'>Erro no cadastro!</span>";
+        $dados['erro'] = 'Não foi possivel efetuar o cadastro';
+        $dados['class'] = 'container';
+        echo view('/errors/erro_select',$dados);
+        header("Refresh:1; url=/Profissional/selectPro");
     }
 
     }

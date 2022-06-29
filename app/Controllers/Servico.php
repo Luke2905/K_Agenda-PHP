@@ -32,14 +32,18 @@ class Servico extends BaseController
 
         $model = model('ServicosModel');
         $dados = $this->request->getPost();
-        $pro = $model ->db->query("insert into servicos(nome_serv,preco_serv,foto_serv) values ('$dados[nome]','$dados[preco]','$dados[url]')");
+        $pro = $model ->db->query("insert into servicos(nome_serv,preco_serv,foto_serv,descriçao_serv) values ('$dados[nome]','$dados[preco]','$dados[url]','$dados[descricao]')");
 
         if($pro){
-            echo "<span class='help-block' style='color: Blue;'>Cadastro efetuado com sucesso!</span><br>";
-            echo "<a href='/Admin/menuServ'>Voltar para o Menu</a><br>";
-            echo "<a href='/Home/galeria'>Galeria de Cortes</a>";
+            $dados['aviso'] = 'Cadastrado com sucesso!';
+            $dados['class'] = 'container';
+            echo view('/errors/sucess_alert',$dados);
+            header ("Refresh:2; url=/Servico/verServico");
     }else {
-        echo "<span class='help-block' style='color: Red;'>Erro no cadastro!</span>";
+        $dados['erro'] = 'Não foi possivel efetuar o cadastro';
+        $dados['class'] = 'container';
+        echo view('/errors/erro_select',$dados);
+        header ("Refresh:2; url=/Servico/verServico");
     }
    }
 
@@ -56,8 +60,10 @@ class Servico extends BaseController
     $pro = $model ->db->query("delete from servicos where id_serv = '$dados[id]'");
 
     if($pro){
-        echo "<span class='help-block' style='color: Blue;'>deletado com sucesso!</span><br>";
-        echo "<a href='verServico'>Voltar</a>";
+        $dados['aviso'] = 'Deletado com sucesso!';
+        $dados['class'] = 'container';
+        echo view('/errors/sucess_alert',$dados);
+        header ("Refresh:2; url=/Servico/verServico");
     }else {
     echo "<span class='help-block' style='color: Red;'>Não foi Possivel deletar o Serviço!</span>";
     }
@@ -83,13 +89,18 @@ class Servico extends BaseController
 
     $model = model('ServicosModel');
     $dados = $this->request->getPost();
-    $pro = $model ->db->query("update servicos set nome_serv='$dados[nome]',foto_serv='$dados[url]',preco_serv='$dados[Preco]' where id_serv ='$dados[id]'");
+    $pro = $model ->db->query("update servicos set nome_serv='$dados[nome]',foto_serv='$dados[url]',preco_serv='$dados[preco]', descriçao_serv='$dados[descricao]' where id_serv ='$dados[id]'");
    // dd($dados);
         if($pro){
-             echo "<span class='help-block' style='color: Blue;'>Alterado com sucesso!</span><br>";
-             echo "<a href='/Admin/menuServ'>Voltar</a><br>";
+            $dados['aviso'] = 'Alterado com sucesso!';
+            $dados['class'] = 'container';
+            echo view('/errors/sucess_alert',$dados);
+            header ("Refresh:2; url=/Servico/verServico");
          }else {
-            echo "<span class='help-block' style='color: Red;'>Não foi Possivel Alterar o Serviço!</span>";
+            $dados['erro'] = 'Não foi Possivel alterar o Serviço!';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
+            header ("Refresh:2; url=/Servico/verServico");
         }
     }
 
