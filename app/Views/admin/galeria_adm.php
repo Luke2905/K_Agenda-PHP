@@ -28,7 +28,7 @@ foreach($servicos as $row){
 
 <div class='card'>
     <div class='CardImagem'>
-        <a class="adicionar" href="/Profissional/cadPro"><img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''></a>
+        <a class="adicionar" href="/Servico/cadServ"><img  src='https://cdn-icons-png.flaticon.com/512/32/32339.png' alt=''></a>
     </div>
     <h3>Adicionar na Galeria</h3>
     <a href='/Servico/cadServ'>Adicionar</a>

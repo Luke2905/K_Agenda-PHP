@@ -473,8 +473,8 @@ section.pesquisa input{
 }
 
 .edit_container_func .card {
-  width: 40vh;
-  height: 60vh;
+  width: 50vh;
+  height: 80vh;
   border-radius: 8px;
   box-shadow: 0 2px 2px black;
   overflow: hidden;

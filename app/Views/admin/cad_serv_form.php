@@ -18,11 +18,15 @@
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Preço</label>
-    <input id="jg" type="decimal" min="0" required="required"  name="preco" placeholder="Preco">  
+    <input id="jg" type="number" min="1" required="required"  name="preco" placeholder="Preco">  
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">URL</label>
     <input id="jg"  type="url" required="required"  name="url" placeholder="URL da imagem">
+</div>
+<div class="col-3">
+    <label class="visually-hidden" for="autoSizingInput">Descrição</label>
+    <input id="jg"  type="text" required="required"  name="descricao" placeholder="Descrição do Corte">
 </div>
 <div class="col-sm-3">
   <button type="submit" id="a01" class="btn btn-danger" value="cadastrar" name="botao">Cadastrar</button>
