@@ -24,7 +24,7 @@ foreach($profissionais as $row){
     echo "</div>";
     echo "<h3>".$row['nome_pro']."</h3>";
     echo "<h4>".$row['telefone_pro']."</h4>";
-    echo "<a href=''>Agendar</a>";
+    //echo "<a href=''>Agendar</a>";
     echo "</div>";
 
 

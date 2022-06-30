@@ -29,7 +29,7 @@
         <li><a href="/Agendamento/index">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localização</a></li>
         <li><a href="/Home/login">Login</a></li>
-         <li><a href="">FAQ</a></li> <! -- ADICIONAR NOVA PÁGINA PARA PERGUNTAS FREQUENTES -->
+         <li><a href="/Home/faq">FAQ</a></li> <! -- ADICIONAR NOVA PÁGINA PARA PERGUNTAS FREQUENTES -->
         
         <label for="modo-escuro">
             <button class="checkbox_dark" role="switch" id="checkbox_dark"></button>
@@ -50,6 +50,7 @@
   <?php echo $this->renderSection("register_login");?>
   <?php echo $this->renderSection("login_register");?>
   <?php echo $this->renderSection("mapa");?>
+  <?php echo $this->renderSection("faq");?>
 
 </body>
 

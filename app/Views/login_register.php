@@ -13,7 +13,7 @@
                     <h1>Login</h1>
                 </div>
                 <div class="login_button">
-                    <button><a href="/Home/register">Registrar</a></button>
+                    <!-- <button><a href="/Home/register">Registrar</a></button> -->
                 </div>
             </div>
 
@@ -30,8 +30,8 @@
 
             <div class="registrar">
                 <button  type="submit" >Entrar</button>
-            </div>
-
+            </div><br>
+            <span style="color:purple; font"> User: admin@gmail.com Senha: 12345678 </span>
         </form>
     </div>
 </div>
