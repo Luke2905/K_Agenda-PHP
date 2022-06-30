@@ -60,7 +60,7 @@ class Admin extends BaseController
 
     public function Lista_Agendamentos()
     {
-        $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y') as data_agend, agendamento.hora_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where status_agend = 'Ativo';"); /*->dados da tabela */ /*->  */
+        $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y') as data_agend, agendamento.hora_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where status_agend = 'Ativo' order by id_agend;"); /*->dados da tabela */ /*->  */
         echo view('admin/lista_agendamentos',$dados);
     }
 
