@@ -8,13 +8,10 @@
         <section class="faq-container">
             <div class="faq-one">
                 <!-- faq question -->
-                <h1 class="faq-page">Como Fazer um Agendamento?</h1>
+                <h1 class="faq-page">Como fazer um agendamento?</h1>
                 <!-- faq answer -->
                 <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
+                    <p>Caso já tenha navegado pelo site e se interessado por nossos serviços e profissionais, dirija-se até a aba escrita "Agendamento", no canto superior direito. Em seguida, preencha os dados necessários e espere pela confirmação do agendamento!</p>
                 </div>
             </div>
             <hr class="hr-line">
@@ -23,10 +20,8 @@
                 <h1 class="faq-page">Como funciona o processo de agendamento?</h1>
                 <!-- faq answer -->
                 <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
+                    <p>Para o processo de agendar, é necessário que se preencha alguns dados como nome e e-mail. </p>
+                    <p> Para sua segurança, há o termo de condição de Uso. Leia-o com atenção.</p>
                 </div>
             </div>
             <hr class="hr-line">
