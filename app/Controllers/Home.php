@@ -50,6 +50,11 @@ class Home extends BaseController
     {
         echo view('register_login');
     }
+
+    public function faq()
+    {
+        echo view('faq.php');
+    }
     /* Exclusão da função de autenticar do Controller Home
     a Função encontra-se no Controller Login
     */
