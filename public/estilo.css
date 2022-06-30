@@ -1370,3 +1370,74 @@ input[type=number] {
   height: 600px;
 }
 /*  Fim Tela de Selecionar Pro */
+
+/* ---- Pagina de FAQ ----*/
+.faq{
+  width: 100%;
+  height: 600px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.faq-heading{
+  text-align: center;
+  border-bottom: rgb(71, 0, 91);
+  padding: 20px 60px;
+  color: purple;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+width: 60%;
+margin: auto;
+
+}
+/* Estilo do botão de abrir e fechar a faq-page body */
+.faq-page {
+  background-color: white; 
+  color:  purple;;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body{
+  margin: auto;
+  /* text-align: center; */
+ width: 50%; 
+ padding: auto;
+ 
+}
+/* Click Java Script */
+.active,
+.faq-page:hover {
+  background-color: #F9F9F9;
+}
+
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faq-page:after {
+  content: '\02795';
+  
+  font-size: 13px;
+  color: rgb(88, 0, 129);
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  
+}
+
+/*---- Fim Pagina de FAQ ----*/
