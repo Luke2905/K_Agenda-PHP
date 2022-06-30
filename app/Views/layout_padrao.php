@@ -11,7 +11,7 @@
   <link id="estilo" class="dia" rel="stylesheet" href="/estilo.css" />
   <link rel="stylesheet" href="/flickity.css">
   <script src="/flickity.pkgd.js"></script>
-  <title>King.Agendamentos</title>
+  <title>King Agendamentos</title>
 </head>
 
 <!--Header-->
@@ -29,8 +29,8 @@
         <li><a href="/Agendamento/index">Agendamento</a></li>
         <li><a href="/Home/localizacao">Localização</a></li>
         <li><a href="/Home/login">Login</a></li>
-         <li><a href="/Home/faq">FAQ</a></li> <! -- ADICIONAR NOVA PÁGINA PARA PERGUNTAS FREQUENTES -->
-        
+         <li><a href="/Home/faq">FAQ</a></li>
+
         <label for="modo-escuro">
             <button class="checkbox_dark" role="switch" id="checkbox_dark"></button>
             <input type="checkbox" id="modo-escuro">
@@ -59,7 +59,7 @@
 <footer class="footer1">
   <div class="center">
     <div class="w50">
-      <p class="footer_p"><i class="fas fa-envelope"></i> kingcut@gmail.com</p>
+      <p class="footer_p"><i class="fas fa-envelope"></i> king.agendamentos@gmail.com</p>
       <p class="footer_p">(XX) 9XXXX-XXXX</p>
       <br>
     </div>
