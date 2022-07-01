@@ -1119,10 +1119,13 @@ table.tabela_agenda{
   width: 400px;
 }
 #solicitacao{
-  grid-area: 1 / 3 / 1 / 4;
-  margin: 10px;
-  position: static;
-  padding-left: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  background: var(--box-bg);
+  height: 100%;
 }
 #agenda{
   grid-area: 1 / 2 / 2 / 3;
