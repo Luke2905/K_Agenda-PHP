@@ -1378,13 +1378,13 @@ input[type=number] {
   justify-content: space-around;
   align-items: center;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 20%;
 }
 .faq-heading{
   text-align: center;
   border-bottom: rgb(71, 0, 91);
   padding: 20px 60px;
-  color: purple;
+  color:var(--text-color);
 }
 .faq-container{
 display: flex;
@@ -1398,8 +1398,9 @@ margin: auto;
 }
 /* Estilo do botão de abrir e fechar a faq-page body */
 .faq-page {
-  background-color: white; 
-  color:  purple;;
+  background-color:var(--background-color);
+  border-radius: 20px;
+  color:var(--text-color);
   cursor: pointer;
   padding: 30px 20px;
   width: 60%;
@@ -1418,20 +1419,29 @@ margin: auto;
 /* Click Java Script */
 .active,
 .faq-page:hover {
-  background-color: #F9F9F9;
+  background-color:var(--button-hover);
+}
+
+h1.faq-page:hover{
+  color: white;
+}
+
+h1.faq-page.active{
+  color: white;
 }
 
 .faq-body {
   padding: 0 18px;
-  background-color: white;
+  background-color:var(--background-color);
   display: none;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .faq-page:after {
   content: '\02795';
   
   font-size: 13px;
-  color: rgb(88, 0, 129);
+  color:var(--text-color);
   float: right;
   margin-left: 5px;
 }
