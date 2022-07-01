@@ -2,14 +2,12 @@
 
 <?php $this->section("home");?>
 
-<div class="graficos">
-
 <div id="solicitacao"> 
 <a href="/Agendamento/selectAgendamento">
 <button class="btn btn-outline-dark" >
   
               Solicitações
-            <span class="badge bg-dark text-white ms-1 rounded-pill"><?php 
+            <span class="badge bg-dark text-white ms-1 rounded-pill" style="color:white;"><?php 
     foreach($solicitacao->getResult('array') as $row){ /*-> retorna os numeros de agendamentos */
       echo $row['Agendamentos'];
     } 
@@ -19,7 +17,7 @@
 
 </div>
 
-
+<div class="graficos">
 
 <div id="grafico3">
     <h3>Agendamentos Cancelados</h3>
@@ -165,7 +163,5 @@
 
 </script>
 </div>
-
-<a href="/Home/index">Sair</a>
 
 <?php $this->endSection(); ?>
