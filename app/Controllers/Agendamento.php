@@ -24,11 +24,19 @@ class Agendamento extends BaseController
 
     public function cadAgendamento()
     {
+        $hoje = date("Y-m-d");
         $model = model('AgendamentoModel');
         $dados = $this->request->getPost();
         //dd($dados);
 
-        $model->where('id_pro',$dados['id']);
+        if($dados['dia'] < $hoje){ /*condição para não agendar em dias passados */
+
+            $dados['erro'] = 'Não foi possivel realizar o agendamento. Por Favor informa uma data futura.';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
+            header("Refresh:2; url=/Agendamento/index");
+        }else{
+            $model->where('id_pro',$dados['id']);
         $model->where('data_agend',$dados['dia']);
         $resultado = $model->where('hora_agend',$dados['hora'])->find();
 
@@ -64,9 +72,10 @@ class Agendamento extends BaseController
             $dados['class'] = 'container';
             echo view('/errors/erro_select',$dados);
         }
-        }
+      }
     }
-
+        
+    }
     public function selectAgendamento(){ /*-> Exibe no select as Solicitações de Agendamento pendetes */
         $dados['servicos'] = $this->agendamentomodel->where('status_agend','Aguardando Confirmação')->find();
         echo view('/admin/confirmar_agend',$dados);
@@ -133,12 +142,50 @@ class Agendamento extends BaseController
             $dados['erro'] = 'Agendamento Cancelado';
             $dados['class'] = 'container';
             echo view('/errors/erro_agendamento',$dados);
-            header("Refresh:2; url=/Admin/Lista_Agendamentos");
+            header("Refresh:2; url=/Login/loginFuncionario");
         }else {
             $dados['erro'] = 'Não foi Possivel Cancelar o Agendamento!';
             $dados['class'] = 'container';
             echo view('/errors/erro_agendamento',$dados);
-            header("Refresh:2; url=/Admin/Lista_Agendamentos");
+            header("Refresh:2; url=/Login/loginFuncionario");
+        }
+       // dd($dados);
+    }
+
+    public function concluirAgendamentoFunc(){ /*-> Muda o Status do Agendamento para concluido*/
+        $model = model('AgendamentoModel');
+        $dados = $this->request->getPost();
+
+        $agend = $model ->db->query("update agendamento set status_agend = 'Concluido' where id_agend ='$dados[Feito]'");
+        if($agend){
+            $dados['aviso'] = 'Agendamento Concluido';
+            $dados['class'] = 'container';
+            echo view('/errors/sucess_alert',$dados);
+            header("Refresh:2; url=/Login/loginFuncionario");
+        }else {
+            $dados['erro'] = 'Não foi Possivel Concluir o Agendamento!';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
+            header("Refresh:2; url=/Login/loginFuncionario");
+        }
+       // dd($dados);
+    }
+    
+    public function cancelarAgendamentoFunc(){ /*-> Muda o Status do Agendamento para Cancelado*/
+        $model = model('AgendamentoModel');
+        $dados = $this->request->getPost();
+
+        $agend = $model ->db->query("update agendamento set status_agend = 'Cancelado' where id_agend ='$dados[Cancelado]'");
+        if($agend){
+            $dados['erro'] = 'Agendamento Cancelado';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
+            header("Refresh:2; url=/Login/loginFuncionario");
+        }else {
+            $dados['erro'] = 'Não foi Possivel Cancelar o Agendamento!';
+            $dados['class'] = 'container';
+            echo view('/errors/erro_agendamento',$dados);
+            header("Refresh:2; url=/Login/loginFuncionario");
         }
        // dd($dados);
     }

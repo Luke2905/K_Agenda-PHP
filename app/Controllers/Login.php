@@ -72,7 +72,7 @@ class Login extends BaseController
             //dd($item);
             $dados['tabela'] = $this->agendamentomodel->query("select agendamento.id_agend, agendamento.nome_agend,agendamento.email_agend ,profissionais.nome_pro, date_format(agendamento.data_agend, '%d/%c/%Y') as data_agend,
              agendamento.hora_agend from agendamento inner join profissionais on agendamento.id_pro=profissionais.id_pro where status_agend = 'Ativo' and agendamento.id_pro = ".$item[0]['id_pro']." order by id_agend;");
-            echo view ('teste',$dados);
+            echo view ('/profissional/Lista_Agendamentos_Func',$dados);
             //echo "<a>Profissional ".$item[0]['nome_pro']." Logado</a><br>";
             echo "<a href='/Login/logout'>Sair</a><br>";
         }else{
